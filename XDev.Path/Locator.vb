@@ -26,6 +26,11 @@
         Return strAppPath
     End Function
 
+    ''' <summary>
+    ''' The workspace location
+    ''' </summary>
+    ''' <returns>String, the workspace path</returns>
+    ''' <remarks></remarks>
     Public Shared Function GetWorkspacePath() As String
         Return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\XDev Studio\Workspace"
     End Function
