@@ -4,6 +4,9 @@ XDev Studio is a text editor I have been working on for several years, only publ
 #Current Version
 2.1
 
+#To Do
+Set up wiki, document code, document how the studio and editor work
+
 #Language Support
 Supports a whole range of languages, with 23 having a high level of support (code completion, various other features):
 
