@@ -102,6 +102,7 @@ Ada, Assembly, Batch, C#, C++, CSS, Fortran, HTML, Java, JavaScript, Lisp, Lua, 
 * Indentation guides, smart completion, smart indentation
 * Tab Triggers
 * Code Templates
+* User profiles
 * And a ton more
 
 #Screenshot
