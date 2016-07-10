@@ -14,6 +14,12 @@ namespace XDev.CompilerHelper
     
    public class Launch
     {
+
+       /// <summary>
+       /// Launches a process and gets the output
+       /// </summary>
+       /// <param name="fileloc"></param>
+       /// <returns>Array of string with output and errors</returns>
         public static String[] LaunchAndGetOutputErrors(String fileloc){
             int timeout = 15000;
             String[] toret = new String[2];
