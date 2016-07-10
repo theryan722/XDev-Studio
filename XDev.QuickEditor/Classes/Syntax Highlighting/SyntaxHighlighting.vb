@@ -98,6 +98,11 @@
         _synthigh = ret
     End Sub
 
+    ''' <summary>
+    ''' Gets the color array
+    ''' </summary>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
     Public Shared Function GetHighlightArray() As Color()
         Return _synthigh
     End Function
