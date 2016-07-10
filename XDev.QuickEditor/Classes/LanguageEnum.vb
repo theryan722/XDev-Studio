@@ -128,6 +128,12 @@ Public Class LanguageEnum
         End Select
     End Function
 
+    ''' <summary>
+    ''' Converts file extension to language enum
+    ''' </summary>
+    ''' <param name="ext"></param>
+    ''' <returns>Language enum of file extension</returns>
+    ''' <remarks></remarks>
     Public Shared Function ConvertExtensionToEnum(ByVal ext As String) As EditorLanguage
         Select Case ext
             Case ".adb"
