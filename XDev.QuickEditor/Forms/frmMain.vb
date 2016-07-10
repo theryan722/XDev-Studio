@@ -874,6 +874,7 @@ Public Class frmMain
         PlainTextToolStripMenuItem.Checked = False
     End Sub
 
+    'Get the page source of a web page (HTML scraper). Helper method that runs in the threadpool
     Private Sub thread_ce_ScrapeHTML(ByVal b As String)
         Dim request As WebRequest = WebRequest.Create(b)
         Using response As WebResponse = request.GetResponse()
@@ -883,6 +884,7 @@ Public Class frmMain
             End Using
         End Using
     End Sub
+
 
     Public Sub LoadFile(ByVal floc As String, ByVal lang As Language.EditorLanguage)
         If System.IO.File.Exists(floc) Then
