@@ -10,6 +10,12 @@
         Return convcolor.ToArgb.ToString
     End Function
 
+    ''' <summary>
+    ''' Converts a string to Color object equivalent
+    ''' </summary>
+    ''' <param name="convstr"></param>
+    ''' <returns></returns>
+    ''' <remarks></remarks>
     Public Shared Function ConvertStringToColor(ByVal convstr As String) As Color
         Return Color.FromArgb(convstr)
     End Function
