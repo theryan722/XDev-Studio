@@ -7,9 +7,11 @@ Imports System.Text.RegularExpressions
 Imports System.Threading
 
 Public Class frmMain
-
+    'File filter string
     Dim filefilter As String = "All Files (*.*)|*.*|Plain Text File (*.txt)|*.txt|Rich Text File (*.rtf)|*.rtf|Action Script File (*.as)|*.as|Ada file (*.ada;*.a;*.ads;*.adb)|*.ada;*.a;*.ads;*.adb|Assembly Language File (*.asm;*.s;*.S)|*.asm;*.s;*.S|ASP Script (*.asp)|*.asp|Unix Script (*.sh)|*.sh|Batch File (*.bat;*.cmd;*.nt)|*.bat;*.cmd;*.nt|C File (*.c)|*.c|COBOL File (*.cbl)|*.cbl|C++ File (*.cpp;*.cc;*.cxx;*.cp;*.c++;*.hpp;*.hxx)|*.cpp;*.cc;*.cxx;*.cp;*.c++;*.hpp;*.hxx|C# File (*.cs)|*.cs|CSS File (*.css)|*.css|D File (*.d)|*.d|Fortran File (*.f;*.f90;*.f95;*.f03;*.for;*.F;*.F90;*.f2k)|*.f;*.f90;*.f95;*.f03;*.for;*.F;*.F90;*.f2k|HTML File (*.html;*.htm;*.xhtml;*.jhtml;*.shtml;*.shtm;*.hta)|*.html;*.htm;*.xhtml;*.jhtml;*.shtml;*.shtm;*.hta|Java File (*.java;*.jsp;*.jspx)|*.java;*.jsp;*.jspx|JavaScript File (*.js)|*.js|LISP File (*.lsp;*.lisp;*.cl;*.el)|*.lsp;*.lisp;*.cl;*.el|Lua File (*.lua)|*.lua|Markdown File (*.md;*.markdown;*.mdown;*.mkdn;*.mkd;*.mdwn;*.mdtxt;*.mdtext)|*.md;*.markdown;*.mdown;*.mkdn;*.mkd;*.mdwn;*.mdtxt;*.mdtext|NFO File (*.nfo)|*.nfo|Pascal File (*.pas;*.pp;*.pascal;*.inc)|*.pas;*.pp;*.pascal;*.inc|Perl File (*.pl;*.pm;*.plx)|*.pl;*.pm;*.plx|PHP File (*.php;*.php4;*.php3;*.phtml)|*.php;*.php4;*.php3;*.phtml|Postscript File (*.ps)|*.ps|Python File (*.py;*.pyw)|*.py;*.pyw|R File (*.r)|*.r|Ruby File (*.rb;*.rhtml;*.rbw)|*.rb;*.rhtml;*.rbw|SmallTalk File (*.st)|*.st|SQL/PostgreSQL File (*.sql)|*.sql|Visual Basic File (*.vb)|*.vb|Visual Basic Script (*.vbs)|*.vbs|XML File (*.xml;*.rss;*.svg;*.xsml;*.xsl;*.xsd;*.kml;*.wsdl;*.xlf;*.xliff)|*.xml;*.rss;*.svg;*.xsml;*.xsl;*.xsd;*.kml;*.wsdl;*.xlf;*.xliff|YAML File (*.yaml;*.yml)|*.yaml;*.yml|XDev Language File (*.xdlf)|*.xdlf|XDev Script File (*.xds)|*.xds"
+    'The location of the file that is being edited
     Dim fileloc As String = ""
+    'Whether or not changes have been saved
     Dim issaved As Boolean = True
 
 #Region "Menu Strip"
