@@ -1042,6 +1042,7 @@ Public Class frmMain
         issaved = False
     End Sub
 
+    'Update editor status when changes are made
     Private Sub TextBox1_SavePointReached(sender As Object, e As EventArgs) Handles TextBox1.SavePointReached
         If fileloc = "" Then
             Me.Text = "Untitled - Quick Editor"
