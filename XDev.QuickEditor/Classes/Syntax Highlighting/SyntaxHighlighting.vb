@@ -1,6 +1,10 @@
 ﻿Friend Class SyntaxHighlighting
     Private Shared _synthigh(87) As Color
 
+    ''' <summary>
+    ''' Sets up an array of Color with the values for syntax highlighting
+    ''' </summary>
+    ''' <remarks></remarks>
     Public Shared Sub GenerateArray()
         Dim ret(87) As Color
         Dim xml = XDocument.Load(XDev.Path.Locator.GetDataPath & "\Editor\syntaxhighlighting.xml")
