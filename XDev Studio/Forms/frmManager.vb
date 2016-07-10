@@ -1180,9 +1180,6 @@ Friend Class frmManager
         '    Logger.Write(Logger.TypeOfLog.Studio, "Did not attempt to load plugins because 'Allow Plugins' is disabled in the security settings.")
         'End If
         AppManager.LoadApps()
-        If My.Settings.set_checkforupdates Then
-            BNUpdate.AutoUpdater.Start("http://www.bionetworkscorp.net/software/update/individual/xdevstudio.xml")
-        End If
         UpdateMenuItems()
         RecentFilesManager.UpdateRecentFilesMenu()
         LanguageCompiler.InitializeNetLanguages()

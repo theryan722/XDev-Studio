@@ -283,9 +283,6 @@
     <Setting Name="set_terminal_font" Type="System.Drawing.Font" Scope="User">
       <Value Profile="(Default)">Microsoft Sans Serif, 10pt</Value>
     </Setting>
-    <Setting Name="set_checkforupdates" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
-    </Setting>
     <Setting Name="set_confirmexit" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>

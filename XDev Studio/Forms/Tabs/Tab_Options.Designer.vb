@@ -128,6 +128,7 @@ Partial Class Tab_Options
         Me.Label74 = New System.Windows.Forms.Label()
         Me.Tab_Other = New System.Windows.Forms.TabPage()
         Me.Panel36 = New System.Windows.Forms.Panel()
+        Me.check_storenotifications = New MetroFramework.Controls.MetroCheckBox()
         Me.txt_scriptatstartup = New MetroFramework.Controls.MetroTextBox()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.check_runscriptatstartup = New MetroFramework.Controls.MetroCheckBox()
@@ -143,7 +144,6 @@ Partial Class Tab_Options
         Me.check_keepfileloc = New MetroFramework.Controls.MetroCheckBox()
         Me.check_enableperformancemodeatstartup = New MetroFramework.Controls.MetroCheckBox()
         Me.check_confirmexit = New MetroFramework.Controls.MetroCheckBox()
-        Me.check_checkforupdates = New MetroFramework.Controls.MetroCheckBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.radio_notabs_exitstudio = New MetroFramework.Controls.MetroRadioButton()
         Me.radio_donothing = New MetroFramework.Controls.MetroRadioButton()
@@ -531,7 +531,6 @@ Partial Class Tab_Options
         Me.btn_savesettings = New MetroFramework.Controls.MetroButton()
         Me.btn_upgradesettings = New MetroFramework.Controls.MetroButton()
         Me.btn_resetsettingstodefault = New MetroFramework.Controls.MetroButton()
-        Me.check_storenotifications = New MetroFramework.Controls.MetroCheckBox()
         Me.TabControl_Main.SuspendLayout()
         Me.Tab_Studio.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -645,7 +644,7 @@ Partial Class Tab_Options
         Me.TabControl_Studio.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl_Studio.Location = New System.Drawing.Point(0, 0)
         Me.TabControl_Studio.Name = "TabControl_Studio"
-        Me.TabControl_Studio.SelectedIndex = 0
+        Me.TabControl_Studio.SelectedIndex = 6
         Me.TabControl_Studio.Size = New System.Drawing.Size(812, 542)
         Me.TabControl_Studio.Style = MetroFramework.MetroColorStyle.Green
         Me.TabControl_Studio.TabIndex = 27
@@ -1697,7 +1696,6 @@ Partial Class Tab_Options
         Me.Panel36.Controls.Add(Me.check_keepfileloc)
         Me.Panel36.Controls.Add(Me.check_enableperformancemodeatstartup)
         Me.Panel36.Controls.Add(Me.check_confirmexit)
-        Me.Panel36.Controls.Add(Me.check_checkforupdates)
         Me.Panel36.Controls.Add(Me.GroupBox1)
         Me.Panel36.Controls.Add(Me.combo_defaultwindowstate)
         Me.Panel36.Controls.Add(Me.check_openfileinselectededitor)
@@ -1708,6 +1706,16 @@ Partial Class Tab_Options
         Me.Panel36.Name = "Panel36"
         Me.Panel36.Size = New System.Drawing.Size(804, 500)
         Me.Panel36.TabIndex = 0
+        '
+        'check_storenotifications
+        '
+        Me.check_storenotifications.AutoSize = True
+        Me.check_storenotifications.Location = New System.Drawing.Point(8, 398)
+        Me.check_storenotifications.Name = "check_storenotifications"
+        Me.check_storenotifications.Size = New System.Drawing.Size(119, 15)
+        Me.check_storenotifications.TabIndex = 39
+        Me.check_storenotifications.Text = "Store notifications"
+        Me.check_storenotifications.UseSelectable = True
         '
         'txt_scriptatstartup
         '
@@ -1753,7 +1761,7 @@ Partial Class Tab_Options
         'check_requirefilestobecreated
         '
         Me.check_requirefilestobecreated.AutoSize = True
-        Me.check_requirefilestobecreated.Location = New System.Drawing.Point(8, 400)
+        Me.check_requirefilestobecreated.Location = New System.Drawing.Point(8, 377)
         Me.check_requirefilestobecreated.Name = "check_requirefilestobecreated"
         Me.check_requirefilestobecreated.Size = New System.Drawing.Size(159, 15)
         Me.check_requirefilestobecreated.TabIndex = 34
@@ -1763,7 +1771,7 @@ Partial Class Tab_Options
         'Label171
         '
         Me.Label171.AutoSize = True
-        Me.Label171.Location = New System.Drawing.Point(9, 365)
+        Me.Label171.Location = New System.Drawing.Point(9, 342)
         Me.Label171.Name = "Label171"
         Me.Label171.Size = New System.Drawing.Size(66, 13)
         Me.Label171.TabIndex = 33
@@ -1774,7 +1782,7 @@ Partial Class Tab_Options
         Me.combo_startuptab.FormattingEnabled = True
         Me.combo_startuptab.ItemHeight = 23
         Me.combo_startuptab.Items.AddRange(New Object() {"Nothing", "Welcome", "Editor", "Notepad", "Tasks", "Calendar", "Hex Viewer", "Process Viewer", "Service Viewer", "Web Browser", "Large File Editor", "Diagrammer", "Code Bank", "WYSIWYG Editor", "RSS Reader", "Image Mapper"})
-        Me.combo_startuptab.Location = New System.Drawing.Point(81, 365)
+        Me.combo_startuptab.Location = New System.Drawing.Point(81, 342)
         Me.combo_startuptab.Name = "combo_startuptab"
         Me.combo_startuptab.Size = New System.Drawing.Size(121, 29)
         Me.combo_startuptab.TabIndex = 32
@@ -1783,7 +1791,7 @@ Partial Class Tab_Options
         'check_displaysplashscreen
         '
         Me.check_displaysplashscreen.AutoSize = True
-        Me.check_displaysplashscreen.Location = New System.Drawing.Point(8, 337)
+        Me.check_displaysplashscreen.Location = New System.Drawing.Point(8, 314)
         Me.check_displaysplashscreen.Name = "check_displaysplashscreen"
         Me.check_displaysplashscreen.Size = New System.Drawing.Size(136, 15)
         Me.check_displaysplashscreen.TabIndex = 31
@@ -1793,7 +1801,7 @@ Partial Class Tab_Options
         'Label170
         '
         Me.Label170.AutoSize = True
-        Me.Label170.Location = New System.Drawing.Point(3, 310)
+        Me.Label170.Location = New System.Drawing.Point(3, 287)
         Me.Label170.Name = "Label170"
         Me.Label170.Size = New System.Drawing.Size(142, 13)
         Me.Label170.TabIndex = 30
@@ -1802,7 +1810,7 @@ Partial Class Tab_Options
         'txt_autosaveinterval
         '
         Me.txt_autosaveinterval.Lines = New String(-1) {}
-        Me.txt_autosaveinterval.Location = New System.Drawing.Point(153, 310)
+        Me.txt_autosaveinterval.Location = New System.Drawing.Point(153, 287)
         Me.txt_autosaveinterval.MaxLength = 32767
         Me.txt_autosaveinterval.Name = "txt_autosaveinterval"
         Me.txt_autosaveinterval.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -1815,7 +1823,7 @@ Partial Class Tab_Options
         'check_autosaveenabled
         '
         Me.check_autosaveenabled.AutoSize = True
-        Me.check_autosaveenabled.Location = New System.Drawing.Point(8, 292)
+        Me.check_autosaveenabled.Location = New System.Drawing.Point(8, 269)
         Me.check_autosaveenabled.Name = "check_autosaveenabled"
         Me.check_autosaveenabled.Size = New System.Drawing.Size(72, 15)
         Me.check_autosaveenabled.TabIndex = 28
@@ -1825,7 +1833,7 @@ Partial Class Tab_Options
         'check_rememberfilesonshutdown
         '
         Me.check_rememberfilesonshutdown.AutoSize = True
-        Me.check_rememberfilesonshutdown.Location = New System.Drawing.Point(8, 258)
+        Me.check_rememberfilesonshutdown.Location = New System.Drawing.Point(8, 235)
         Me.check_rememberfilesonshutdown.Name = "check_rememberfilesonshutdown"
         Me.check_rememberfilesonshutdown.Size = New System.Drawing.Size(221, 15)
         Me.check_rememberfilesonshutdown.TabIndex = 27
@@ -1835,7 +1843,7 @@ Partial Class Tab_Options
         'check_keepfileloc
         '
         Me.check_keepfileloc.AutoSize = True
-        Me.check_keepfileloc.Location = New System.Drawing.Point(8, 237)
+        Me.check_keepfileloc.Location = New System.Drawing.Point(8, 214)
         Me.check_keepfileloc.Name = "check_keepfileloc"
         Me.check_keepfileloc.Size = New System.Drawing.Size(299, 15)
         Me.check_keepfileloc.TabIndex = 26
@@ -1845,7 +1853,7 @@ Partial Class Tab_Options
         'check_enableperformancemodeatstartup
         '
         Me.check_enableperformancemodeatstartup.AutoSize = True
-        Me.check_enableperformancemodeatstartup.Location = New System.Drawing.Point(8, 216)
+        Me.check_enableperformancemodeatstartup.Location = New System.Drawing.Point(8, 193)
         Me.check_enableperformancemodeatstartup.Name = "check_enableperformancemodeatstartup"
         Me.check_enableperformancemodeatstartup.Size = New System.Drawing.Size(219, 15)
         Me.check_enableperformancemodeatstartup.TabIndex = 25
@@ -1855,22 +1863,12 @@ Partial Class Tab_Options
         'check_confirmexit
         '
         Me.check_confirmexit.AutoSize = True
-        Me.check_confirmexit.Location = New System.Drawing.Point(8, 195)
+        Me.check_confirmexit.Location = New System.Drawing.Point(8, 172)
         Me.check_confirmexit.Name = "check_confirmexit"
         Me.check_confirmexit.Size = New System.Drawing.Size(157, 15)
         Me.check_confirmexit.TabIndex = 24
         Me.check_confirmexit.Text = "Show Confirm Exit Dialog"
         Me.check_confirmexit.UseSelectable = True
-        '
-        'check_checkforupdates
-        '
-        Me.check_checkforupdates.AutoSize = True
-        Me.check_checkforupdates.Location = New System.Drawing.Point(8, 174)
-        Me.check_checkforupdates.Name = "check_checkforupdates"
-        Me.check_checkforupdates.Size = New System.Drawing.Size(120, 15)
-        Me.check_checkforupdates.TabIndex = 23
-        Me.check_checkforupdates.Text = "Check for Updates"
-        Me.check_checkforupdates.UseSelectable = True
         '
         'GroupBox1
         '
@@ -6071,16 +6069,6 @@ Partial Class Tab_Options
         Me.btn_resetsettingstodefault.Text = "Reset Settings To Default"
         Me.btn_resetsettingstodefault.UseSelectable = True
         '
-        'check_storenotifications
-        '
-        Me.check_storenotifications.AutoSize = True
-        Me.check_storenotifications.Location = New System.Drawing.Point(8, 421)
-        Me.check_storenotifications.Name = "check_storenotifications"
-        Me.check_storenotifications.Size = New System.Drawing.Size(119, 15)
-        Me.check_storenotifications.TabIndex = 39
-        Me.check_storenotifications.Text = "Store notifications"
-        Me.check_storenotifications.UseSelectable = True
-        '
         'Tab_Options
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -6433,7 +6421,6 @@ End Sub
     Friend WithEvents Label83 As System.Windows.Forms.Label
     Friend WithEvents btn_setspeeddialbackcolor As MetroFramework.Controls.MetroButton
     Friend WithEvents btn_upgradesettings As MetroFramework.Controls.MetroButton
-    Friend WithEvents check_checkforupdates As MetroFramework.Controls.MetroCheckBox
     Friend WithEvents btn_languages_custom_importfromfile As MetroFramework.Controls.MetroButton
     Friend WithEvents btn_languages_custom_exporttofile As MetroFramework.Controls.MetroButton
     Friend WithEvents check_confirmexit As MetroFramework.Controls.MetroCheckBox

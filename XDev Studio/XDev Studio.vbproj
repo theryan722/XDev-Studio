@@ -79,9 +79,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\BioNetWorks Shared DLLS\Encrypted\BN.Toast\1.1\BN.Toast.dll</HintPath>
     </Reference>
-    <Reference Include="BN.Update">
-      <HintPath>..\..\..\BioNetWorks Shared DLLS\Encrypted\BN.Update\2.0.1\BN.Update.dll</HintPath>
-    </Reference>
     <Reference Include="CalculatorBox">
       <HintPath>..\..\..\DLLS\Organized\CalculatorBox\CalculatorBox.dll</HintPath>
     </Reference>

@@ -1047,18 +1047,6 @@ Namespace My
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
-        Public Property set_checkforupdates() As Boolean
-            Get
-                Return CType(Me("set_checkforupdates"),Boolean)
-            End Get
-            Set
-                Me("set_checkforupdates") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
         Public Property set_confirmexit() As Boolean
             Get
                 Return CType(Me("set_confirmexit"),Boolean)

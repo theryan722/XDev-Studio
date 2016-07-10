@@ -1296,7 +1296,6 @@ Friend Class Tab_Options
         ElseIf My.Settings.set_actionifnotabs = 2 Then
             radio_notabs_exitstudio.Checked = True
         End If
-        check_checkforupdates.Checked = My.Settings.set_checkforupdates
         check_confirmexit.Checked = My.Settings.set_confirmexit
         check_enableperformancemodeatstartup.Checked = My.Settings.set_enableperformancemodeatstartup
         check_keepfileloc.Checked = My.Settings.set_keepfileloc
@@ -1465,7 +1464,6 @@ Friend Class Tab_Options
         combo_defaultwindowstate.SelectedItem = "Normal"
         check_openfileinselectededitor.Checked = False
         radio_donothing.Checked = True
-        check_checkforupdates.Checked = True
         check_confirmexit.Checked = True
         check_enableperformancemodeatstartup.Checked = False
         check_keepfileloc.Checked = True
@@ -1651,7 +1649,6 @@ Friend Class Tab_Options
         ElseIf radio_notabs_exitstudio.Checked Then
             My.Settings.set_actionifnotabs = 2
         End If
-        My.Settings.set_checkforupdates = check_checkforupdates.Checked
         My.Settings.set_confirmexit = check_confirmexit.Checked
         My.Settings.set_enableperformancemodeatstartup = check_enableperformancemodeatstartup.Checked
         My.Settings.set_keepfileloc = check_keepfileloc.Checked
