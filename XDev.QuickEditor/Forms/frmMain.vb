@@ -846,6 +846,7 @@ Public Class frmMain
 
 #Region "Methods"
 
+    'Unchecks all language menu items
     Private Sub UncheckLanguage()
         AdaToolStripMenuItem.Checked = False
         AssemblyToolStripMenuItem.Checked = False
