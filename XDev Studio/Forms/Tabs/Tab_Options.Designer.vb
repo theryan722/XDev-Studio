@@ -635,16 +635,16 @@ Partial Class Tab_Options
         'TabControl_Studio
         '
         Me.TabControl_Studio.Controls.Add(Me.Tab_Style)
+        Me.TabControl_Studio.Controls.Add(Me.Tab_Other)
         Me.TabControl_Studio.Controls.Add(Me.Tab_Security)
         Me.TabControl_Studio.Controls.Add(Me.Tab_Toolbars)
         Me.TabControl_Studio.Controls.Add(Me.Tab_DefaultLocations)
         Me.TabControl_Studio.Controls.Add(Me.Tab_CustomCompiler)
         Me.TabControl_Studio.Controls.Add(Me.Tab_SpeedDial)
-        Me.TabControl_Studio.Controls.Add(Me.Tab_Other)
         Me.TabControl_Studio.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl_Studio.Location = New System.Drawing.Point(0, 0)
         Me.TabControl_Studio.Name = "TabControl_Studio"
-        Me.TabControl_Studio.SelectedIndex = 6
+        Me.TabControl_Studio.SelectedIndex = 0
         Me.TabControl_Studio.Size = New System.Drawing.Size(812, 542)
         Me.TabControl_Studio.Style = MetroFramework.MetroColorStyle.Green
         Me.TabControl_Studio.TabIndex = 27
