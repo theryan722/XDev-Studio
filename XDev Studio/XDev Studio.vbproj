@@ -1,0 +1,906 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66524B1E-6B45-4FAD-BFE3-62A039C1C920}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>XDev_Studio.My.MyApplication</StartupObject>
+    <RootNamespace>XDev_Studio</RootNamespace>
+    <AssemblyName>XDev Studio</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://www.bionetworkscorp.net/support/</SupportUrl>
+    <ProductName>XDev Studio</ProductName>
+    <PublisherName>BioNetWorks Corp.</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>XDev Studio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>XDev Studio.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>xdev_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BN.FTP">
+      <HintPath>..\..\..\BioNetWorks Shared DLLS\Encrypted\BN.FTP.dll</HintPath>
+    </Reference>
+    <Reference Include="BN.Toast, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\BioNetWorks Shared DLLS\Encrypted\BN.Toast\1.1\BN.Toast.dll</HintPath>
+    </Reference>
+    <Reference Include="BN.Update">
+      <HintPath>..\..\..\BioNetWorks Shared DLLS\Encrypted\BN.Update\2.0.1\BN.Update.dll</HintPath>
+    </Reference>
+    <Reference Include="CalculatorBox">
+      <HintPath>..\..\..\DLLS\Organized\CalculatorBox\CalculatorBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Calendar.NET">
+      <HintPath>..\..\..\DLLS\Organized\Calendar.NET\Calendar.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="ColorPickerLib, Version=1.0.5565.34805, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ColorPickerLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ConversionWrapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ConversionWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dalssoft.DiagramNet">
+      <HintPath>..\..\..\DLLS\Organized\Diagram.Net\Dalssoft.DiagramNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DifferenceEngine, Version=1.0.5664.27529, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\DifferenceEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Edanmo.TaskScheduler">
+      <HintPath>..\..\..\DLLS\Organized\TaskScheduler\Edanmo.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSitePreviewer">
+      <HintPath>..\..\..\DLLS\Organized\Website Previewer\HtmlSitePreviewer.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory, Version=4.1.0.8000, Culture=neutral, PublicKeyToken=efe927acf176eea2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpRefactory, Version=1.1.0.1964, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.SharpRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpRefactoryVB, Version=1.1.0.1964, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ICSharpCode.SharpRefactoryVB.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\DLLS\Organized\MetroFramework-winforms-modernui\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\..\DLLS\Organized\MetroFramework-winforms-modernui\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\..\DLLS\Organized\MetroFramework-winforms-modernui\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="NHunspell, Version=1.2.5554.16953, Culture=neutral, PublicKeyToken=1ac793ea843b4366, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NHunspell.dll</HintPath>
+    </Reference>
+    <Reference Include="Ozone.LanguageDetector">
+      <HintPath>..\..\Ozone.LanguageDetector\Ozone.LanguageDetector\bin\Debug\Ozone.LanguageDetector.dll</HintPath>
+    </Reference>
+    <Reference Include="Ozone.Markdown">
+      <HintPath>..\..\Ozone.Markdown\Bin\1.0\Ozone.Markdown.dll</HintPath>
+    </Reference>
+    <Reference Include="rsp.ConVert, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\rsp.ConVert.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="TXTextControl, Version=21.0.1400.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638" />
+    <Reference Include="TXTextControl.Windows.Forms, Version=21.0.600.500, Culture=neutral, PublicKeyToken=6b83fe9a75cfb638, processorArchitecture=MSIL" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\..\..\..\DLLS\Organized\WeiFen Luo DockPanelSuite\dockpanelsuite-development_3.0\bin\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Classes\Apps\AppLoader.vb" />
+    <Compile Include="Classes\Apps\AppManager.vb" />
+    <Compile Include="Classes\Apps\AppObject.vb" />
+    <Compile Include="Classes\Bases.vb" />
+    <Compile Include="Classes\File Objects\USearchObject.vb" />
+    <Compile Include="Classes\GlobalClipboardHistoryUpdater.vb" />
+    <Compile Include="Classes\EditMethods.vb" />
+    <Compile Include="Classes\Language\LanguageConverter.vb" />
+    <Compile Include="Classes\Language\LanguageFormatter.vb" />
+    <Compile Include="Classes\NotificationManager.vb" />
+    <Compile Include="Classes\Profiles\CurrentProfile.vb" />
+    <Compile Include="Classes\Profiles\ProfileManager.vb" />
+    <Compile Include="Classes\QuickCommand\QCObject.vb" />
+    <Compile Include="Classes\QuickCommand\QuickCommandLoader.vb" />
+    <Compile Include="Classes\Settings\Syntax Highlighting\ColorConverter.vb" />
+    <Compile Include="Classes\Features\CodeRecovery.vb" />
+    <Compile Include="Classes\ComparerClass.vb" />
+    <Compile Include="Classes\Conversion.vb" />
+    <Compile Include="Classes\ConverterVariables.vb" />
+    <Compile Include="Classes\CPUMonitor.vb" />
+    <Compile Include="Classes\DataManager.vb" />
+    <Compile Include="Classes\Features\BackupManager.vb" />
+    <Compile Include="Classes\Features\EncryptManager.vb" />
+    <Compile Include="Classes\File Objects\SearchObject.vb" />
+    <Compile Include="Classes\File Objects\FileObject.vb" />
+    <Compile Include="Classes\FormPosition.vb" />
+    <Compile Include="Classes\HTMLProtector.vb" />
+    <Compile Include="Classes\Language\LanguageCompiler.vb" />
+    <Compile Include="Classes\Language\LanguageEnum.vb" />
+    <Compile Include="Classes\Logger.vb" />
+    <Compile Include="Classes\MacroRecorder.vb" />
+    <Compile Include="Classes\NetworkInfo.vb" />
+    <Compile Include="Classes\Project\ProjectReader.vb" />
+    <Compile Include="Classes\Project\ProjectWriter.vb" />
+    <Compile Include="Classes\RecentFilesManager.vb" />
+    <Compile Include="Classes\RSS\RSSChannel.vb" />
+    <Compile Include="Classes\RSS\RSSItem.vb" />
+    <Compile Include="Classes\SDObject.vb" />
+    <Compile Include="Classes\SessionManager.vb" />
+    <Compile Include="Classes\Settings\Settings.vb" />
+    <Compile Include="Classes\Features\SpeechEngine.vb" />
+    <Compile Include="Classes\SpellChecker.vb" />
+    <Compile Include="Classes\Settings\Syntax Highlighting\SyntaxHighlighting.vb" />
+    <Compile Include="Classes\Tabs.vb" />
+    <Compile Include="Classes\BrowserNoFocus.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\WhoisResolver.vb" />
+    <Compile Include="Classes\XDevScriptRunner.vb" />
+    <Compile Include="Classes\XDockContent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgNewFile.Designer.vb">
+      <DependentUpon>dlgNewFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgNewFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgQuickOpen.Designer.vb">
+      <DependentUpon>dlgQuickOpen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgQuickOpen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmAbout.Designer.vb">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDragContent.Designer.vb">
+      <DependentUpon>frmDragContent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDragContent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLock.Designer.vb">
+      <DependentUpon>frmLock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmManager.Designer.vb">
+      <DependentUpon>frmManager.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPresent.Designer.vb">
+      <DependentUpon>frmPresent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPresent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPreview.Designer.vb">
+      <DependentUpon>frmPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPreview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmQuickCommand.designer.vb">
+      <DependentUpon>frmQuickCommand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmQuickCommand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSave.Designer.vb">
+      <DependentUpon>frmSave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSave.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSitePreviewer.Designer.vb">
+      <DependentUpon>frmSitePreviewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSitePreviewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSpeedDial.Designer.vb">
+      <DependentUpon>frmSpeedDial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSpeedDial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgSurroundWith.Designer.vb">
+      <DependentUpon>dlgSurroundWith.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\dlgSurroundWith.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTips.Designer.vb">
+      <DependentUpon>frmTips.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTips.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmWindows.Designer.vb">
+      <DependentUpon>frmWindows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmWindows.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\New\frmNewFile.Designer.vb">
+      <DependentUpon>frmNewFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\New\frmNewFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\New\frmNewProject.Designer.vb">
+      <DependentUpon>frmNewProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\New\frmNewProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProjectInfo.Designer.vb">
+      <DependentUpon>frmProjectInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProjectInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlFavorites.Designer.vb">
+      <DependentUpon>pnlFavorites.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlFavorites.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlImageViewer.Designer.vb">
+      <DependentUpon>pnlImageViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlImageViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlLiveBrowser.Designer.vb">
+      <DependentUpon>pnlLiveBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlLiveBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlNotificationCenter.Designer.vb">
+      <DependentUpon>pnlNotificationCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlNotificationCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlSystemTerminal.Designer.vb">
+      <DependentUpon>pnlSystemTerminal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlSystemTerminal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlToolbars.Designer.vb">
+      <DependentUpon>pnlToolbars.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlToolbars.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\Project Explorer\frmMoveFile.Designer.vb">
+      <DependentUpon>frmMoveFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\Project Explorer\frmMoveFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\Project Explorer\pnlProjectExplorer.Designer.vb">
+      <DependentUpon>pnlProjectExplorer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\Project Explorer\pnlProjectExplorer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlToolPanel.Designer.vb">
+      <DependentUpon>pnlToolPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Panels\pnlToolPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profiles\frmProfileCreate.Designer.vb">
+      <DependentUpon>frmProfileCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profiles\frmProfileCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profiles\frmProfileInfo.Designer.vb">
+      <DependentUpon>frmProfileInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profiles\frmProfileInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Profiles\frmProfileSelect.Designer.vb">
+      <DependentUpon>frmProfileSelect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Profiles\frmProfileSelect.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen1.designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Bookmarks.Designer.vb">
+      <DependentUpon>Tab_Bookmarks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Bookmarks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmColorPicker.Designer.vb">
+      <DependentUpon>frmColorPicker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmColorPicker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_CodeRecovery.Designer.vb">
+      <DependentUpon>Tab_CodeRecovery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_CodeRecovery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_StudioTerminal.Designer.vb">
+      <DependentUpon>Tab_StudioTerminal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_StudioTerminal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Large File Editor\Dialogs\LFE_FindReplace.Designer.vb">
+      <DependentUpon>LFE_FindReplace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Large File Editor\Dialogs\LFE_FindReplace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Large File Editor\Dialogs\LFE_Goto.Designer.vb">
+      <DependentUpon>LFE_Goto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Large File Editor\Dialogs\LFE_Goto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_CodeBank.Designer.vb">
+      <DependentUpon>Tab_CodeBank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_CodeBank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_CodeMetrics.Designer.vb">
+      <DependentUpon>Tab_CodeMetrics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_CodeMetrics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_Diagrammer.Designer.vb">
+      <DependentUpon>Tab_Diagrammer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_Diagrammer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_DifferenceViewer.Designer.vb">
+      <DependentUpon>Tab_DifferenceViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_DifferenceViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_FileHistory.Designer.vb">
+      <DependentUpon>Tab_FileHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_FileHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_HexViewer.Designer.vb">
+      <DependentUpon>Tab_HexViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_HexViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_ImageMapper.Designer.vb">
+      <DependentUpon>Tab_ImageMapper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_ImageMapper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Large File Editor\Tab_LargeFileEditor.Designer.vb">
+      <DependentUpon>Tab_LargeFileEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Large File Editor\Tab_LargeFileEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_NetConverter.Designer.vb">
+      <DependentUpon>Tab_NetConverter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_NetConverter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_RSSReader.Designer.vb">
+      <DependentUpon>Tab_RSSReader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_RSSReader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_TaskScheduler.Designer.vb">
+      <DependentUpon>Tab_TaskScheduler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_TaskScheduler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_TestBrowser.Designer.vb">
+      <DependentUpon>Tab_TestBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_TestBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_Calendar.Designer.vb">
+      <DependentUpon>Tab_Calendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_Calendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_CodeEditor.Designer.vb">
+      <DependentUpon>Tab_CodeEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_CodeEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_FileDownloader.Designer.vb">
+      <DependentUpon>Tab_FileDownloader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_FileDownloader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_LogManager.Designer.vb">
+      <DependentUpon>Tab_LogManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_LogManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_Notepad.Designer.vb">
+      <DependentUpon>Tab_Notepad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_Notepad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Options.Designer.vb">
+      <DependentUpon>Tab_Options.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Options.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_ProcessViewer.Designer.vb">
+      <DependentUpon>Tab_ProcessViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_ProcessViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_TaskViewer.Designer.vb">
+      <DependentUpon>Tab_TaskViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_TaskViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_ServiceViewer.Designer.vb">
+      <DependentUpon>Tab_ServiceViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_ServiceViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_UniversalSearch.Designer.vb">
+      <DependentUpon>Tab_UniversalSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_UniversalSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_WebBrowser.Designer.vb">
+      <DependentUpon>Tab_WebBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_WebBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_WebDocumentation.Designer.vb">
+      <DependentUpon>Tab_WebDocumentation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_WebDocumentation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Welcome.Designer.vb">
+      <DependentUpon>Tab_Welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_Welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_AppManager.Designer.vb">
+      <DependentUpon>Tab_AppManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tab_AppManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_WYSIWYGEditor.Designer.vb">
+      <DependentUpon>Tab_WYSIWYGEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tabs\Tools\Tab_WYSIWYGEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Classes\XDockContent.resx">
+      <DependentUpon>XDockContent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\dlgNewFile.resx">
+      <DependentUpon>dlgNewFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\dlgQuickOpen.resx">
+      <DependentUpon>dlgQuickOpen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmAbout.resx">
+      <DependentUpon>frmAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmColorPicker.resx">
+      <DependentUpon>frmColorPicker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDragContent.resx">
+      <DependentUpon>frmDragContent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLock.resx">
+      <DependentUpon>frmLock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManager.resx">
+      <DependentUpon>frmManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPresent.resx">
+      <DependentUpon>frmPresent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPreview.resx">
+      <DependentUpon>frmPreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmQuickCommand.resx">
+      <DependentUpon>frmQuickCommand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSave.resx">
+      <DependentUpon>frmSave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSitePreviewer.resx">
+      <DependentUpon>frmSitePreviewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSpeedDial.resx">
+      <DependentUpon>frmSpeedDial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\dlgSurroundWith.resx">
+      <DependentUpon>dlgSurroundWith.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTips.resx">
+      <DependentUpon>frmTips.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmWindows.resx">
+      <DependentUpon>frmWindows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\New\frmNewFile.resx">
+      <DependentUpon>frmNewFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\New\frmNewProject.resx">
+      <DependentUpon>frmNewProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProjectInfo.resx">
+      <DependentUpon>frmProjectInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\pnlFavorites.resx">
+      <DependentUpon>pnlFavorites.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\pnlImageViewer.resx">
+      <DependentUpon>pnlImageViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\pnlLiveBrowser.resx">
+      <DependentUpon>pnlLiveBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\pnlNotificationCenter.resx">
+      <DependentUpon>pnlNotificationCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\pnlSystemTerminal.resx">
+      <DependentUpon>pnlSystemTerminal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\pnlToolbars.resx">
+      <DependentUpon>pnlToolbars.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\Project Explorer\frmMoveFile.resx">
+      <DependentUpon>frmMoveFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\Project Explorer\pnlProjectExplorer.resx">
+      <DependentUpon>pnlProjectExplorer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Panels\pnlToolPanel.resx">
+      <DependentUpon>pnlToolPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profiles\frmProfileCreate.resx">
+      <DependentUpon>frmProfileCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profiles\frmProfileInfo.resx">
+      <DependentUpon>frmProfileInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Profiles\frmProfileSelect.resx">
+      <DependentUpon>frmProfileSelect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tab_AppManager.resx">
+      <DependentUpon>Tab_AppManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tab_Bookmarks.resx">
+      <DependentUpon>Tab_Bookmarks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_CodeRecovery.resx">
+      <DependentUpon>Tab_CodeRecovery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tab_StudioTerminal.resx">
+      <DependentUpon>Tab_StudioTerminal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Large File Editor\Dialogs\LFE_FindReplace.resx">
+      <DependentUpon>LFE_FindReplace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Large File Editor\Dialogs\LFE_Goto.resx">
+      <DependentUpon>LFE_Goto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_CodeBank.resx">
+      <DependentUpon>Tab_CodeBank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_CodeMetrics.resx">
+      <DependentUpon>Tab_CodeMetrics.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_Diagrammer.resx">
+      <DependentUpon>Tab_Diagrammer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_DifferenceViewer.resx">
+      <DependentUpon>Tab_DifferenceViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_FileHistory.resx">
+      <DependentUpon>Tab_FileHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_HexViewer.resx">
+      <DependentUpon>Tab_HexViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_ImageMapper.resx">
+      <DependentUpon>Tab_ImageMapper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Large File Editor\Tab_LargeFileEditor.resx">
+      <DependentUpon>Tab_LargeFileEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_NetConverter.resx">
+      <DependentUpon>Tab_NetConverter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_RSSReader.resx">
+      <DependentUpon>Tab_RSSReader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_TaskScheduler.resx">
+      <DependentUpon>Tab_TaskScheduler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_TestBrowser.resx">
+      <DependentUpon>Tab_TestBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_Calendar.resx">
+      <DependentUpon>Tab_Calendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tab_CodeEditor.resx">
+      <DependentUpon>Tab_CodeEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_FileDownloader.resx">
+      <DependentUpon>Tab_FileDownloader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tab_LogManager.resx">
+      <DependentUpon>Tab_LogManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_Notepad.resx">
+      <DependentUpon>Tab_Notepad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tab_Options.resx">
+      <DependentUpon>Tab_Options.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_ProcessViewer.resx">
+      <DependentUpon>Tab_ProcessViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tab_TaskViewer.resx">
+      <DependentUpon>Tab_TaskViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_ServiceViewer.resx">
+      <DependentUpon>Tab_ServiceViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_UniversalSearch.resx">
+      <DependentUpon>Tab_UniversalSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_WebBrowser.resx">
+      <DependentUpon>Tab_WebBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tab_WebDocumentation.resx">
+      <DependentUpon>Tab_WebDocumentation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tab_Welcome.resx">
+      <DependentUpon>Tab_Welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tabs\Tools\Tab_WYSIWYGEditor.resx">
+      <DependentUpon>Tab_WYSIWYGEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScintillaNET\ScintillaNET.csproj">
+      <Project>{22ae2386-60f1-476e-9303-61cdb0aac4cf}</Project>
+      <Name>ScintillaNET</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XDev.CompilerHelper\XDev.CompilerHelper.csproj">
+      <Project>{e50d7cc8-0dc7-4aa8-ba7c-4fa101212215}</Project>
+      <Name>XDev.CompilerHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XDev.Editor\XDev.Editor.vbproj">
+      <Project>{91dda298-cbc9-44db-ac9d-1e5a8c04c5d4}</Project>
+      <Name>XDev.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\XDev.Path\XDev.Path.vbproj">
+      <Project>{c630068e-bed2-49b0-a871-04246fc1e260}</Project>
+      <Name>XDev.Path</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16_down.png" />
+    <None Include="Resources\16_up.png" />
+    <None Include="Resources\32_exitfullscreen.png" />
+    <None Include="Resources\32_fullscreen.png" />
+    <None Include="Resources\96_profile.png" />
+    <None Include="Resources\dockpanel_background.PNG" />
+    <Content Include="xdev_icon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
