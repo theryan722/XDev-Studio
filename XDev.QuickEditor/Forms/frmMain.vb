@@ -973,6 +973,7 @@ Public Class frmMain
 
 #Region "TextBox1"
 
+    'Update the language menu when the editor's language has been changed
     Private Sub TextBox1_LanguageChanged() Handles TextBox1.LanguageChanged
         UncheckLanguage()
         Select Case TextBox1.Language
