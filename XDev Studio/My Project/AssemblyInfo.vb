@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("XDev Studio")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("BioNetWorks Corp.")> 
+<Assembly: AssemblyCompany("Ryan O'Day")> 
 <Assembly: AssemblyProduct("XDev Studio")> 
-<Assembly: AssemblyCopyright("Copyright ©  2015")> 
+<Assembly: AssemblyCopyright("Copyright ©  2016")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
