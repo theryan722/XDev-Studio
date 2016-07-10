@@ -2,6 +2,12 @@
 
 Public Class LanguageEnum
 
+    ''' <summary>
+    ''' Converts language name in string format to language enum
+    ''' </summary>
+    ''' <param name="lang"></param>
+    ''' <returns>Enum of the language name</returns>
+    ''' <remarks></remarks>
     Public Shared Function ConvertReadableToEnum(ByVal lang As String) As EditorLanguage
         Select Case lang
             Case "Ada"
