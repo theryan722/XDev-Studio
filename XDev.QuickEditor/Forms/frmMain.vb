@@ -885,7 +885,7 @@ Public Class frmMain
         End Using
     End Sub
 
-
+    'Loads a file into the editor
     Public Sub LoadFile(ByVal floc As String, ByVal lang As Language.EditorLanguage)
         If System.IO.File.Exists(floc) Then
             Try
