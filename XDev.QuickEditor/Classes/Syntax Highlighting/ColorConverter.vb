@@ -4,7 +4,7 @@
     ''' Converts a color to string equivalent
     ''' </summary>
     ''' <param name="convcolor"></param>
-    ''' <returns></returns>
+    ''' <returns>Color in string format</returns>
     ''' <remarks></remarks>
     Public Shared Function ConvertColorToString(ByVal convcolor As Color) As String
         Return convcolor.ToArgb.ToString
@@ -14,7 +14,7 @@
     ''' Converts a string to Color object equivalent
     ''' </summary>
     ''' <param name="convstr"></param>
-    ''' <returns></returns>
+    ''' <returns>String as a color object</returns>
     ''' <remarks></remarks>
     Public Shared Function ConvertStringToColor(ByVal convstr As String) As Color
         Return Color.FromArgb(convstr)

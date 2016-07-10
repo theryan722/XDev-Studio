@@ -101,7 +101,7 @@
     ''' <summary>
     ''' Gets the color array
     ''' </summary>
-    ''' <returns></returns>
+    ''' <returns>Array of Color, the syntax highlighting values</returns>
     ''' <remarks></remarks>
     Public Shared Function GetHighlightArray() As Color()
         Return _synthigh
