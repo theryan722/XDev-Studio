@@ -76,7 +76,7 @@ Partial Class frmAbout
         Me.MetroButton1.Name = "MetroButton1"
         Me.MetroButton1.Size = New System.Drawing.Size(114, 29)
         Me.MetroButton1.TabIndex = 1
-        Me.MetroButton1.Text = "Visit BioNetWorks"
+        Me.MetroButton1.Text = "Visit Github"
         Me.MetroButton1.UseSelectable = True
         '
         'PictureBox1

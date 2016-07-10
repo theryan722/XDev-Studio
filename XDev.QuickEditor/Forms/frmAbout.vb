@@ -1,7 +1,7 @@
 ﻿Friend Class frmAbout
 
    Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
-        System.Diagnostics.Process.Start("http://www.bionetworkscorp.net/")
+        System.Diagnostics.Process.Start("https://github.com/theryan722/XDev-Studio")
     End Sub
 
     Private Sub MetroButton2_Click(sender As Object, e As EventArgs) Handles MetroButton2.Click
