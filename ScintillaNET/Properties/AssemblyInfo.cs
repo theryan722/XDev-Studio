@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("ScintillaNET")]
 [assembly: AssemblyDescription("Source Editing Component")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Jacob Slusser")]
+[assembly: AssemblyCompany("Jacob Slusser, modified by Ryan O'Day")]
 [assembly: AssemblyProduct("ScintillaNET")]
 [assembly: AssemblyCopyright("Copyright (c) 2015, Jacob Slusser. All rights reserved.")]
 [assembly: AssemblyTrademark("The MIT License (MIT)")]
