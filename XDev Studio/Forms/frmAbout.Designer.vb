@@ -77,7 +77,7 @@ Partial Class frmAbout
         Me.MetroLabel1.AutoSize = True
         Me.MetroLabel1.Location = New System.Drawing.Point(123, 175)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(96, 19)
+        Me.MetroLabel1.Size = New System.Drawing.Size(93, 19)
         Me.MetroLabel1.TabIndex = 7
         Me.MetroLabel1.Text = "Version: 2.1.0.0"
         Me.ToolTip1.SetToolTip(Me.MetroLabel1, "The BioNetWorks Software Manager is required in order to check for updates.")
@@ -88,7 +88,7 @@ Partial Class frmAbout
         Me.MetroButton1.Name = "MetroButton1"
         Me.MetroButton1.Size = New System.Drawing.Size(114, 29)
         Me.MetroButton1.TabIndex = 1
-        Me.MetroButton1.Text = "Visit BioNetWorks"
+        Me.MetroButton1.Text = "Visit Repository"
         Me.MetroButton1.UseSelectable = True
         '
         'PictureBox1
