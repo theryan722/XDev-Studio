@@ -1,5 +1,10 @@
 ﻿Public Class Locator
 
+    ''' <summary>
+    ''' The location used to store XDev Studio data
+    ''' </summary>
+    ''' <returns>String, the data path</returns>
+    ''' <remarks></remarks>
     Public Shared Function GetDataPath() As String
         Return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\XDev Studio"
     End Function
