@@ -1069,6 +1069,7 @@ Public Class frmMain
         End If
     End Sub
 
+    'Call InitializeEditor()
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         InitializeEditor()
     End Sub
