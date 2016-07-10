@@ -5878,10 +5878,6 @@ Friend Class frmManager
         End If
     End Sub
 
-    Private Sub DevelopmentBlogToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DevelopmentBlogToolStripMenuItem.Click
-        System.Diagnostics.Process.Start("http://ryanoday.blogspot.com/")
-    End Sub
-
     Private Sub TerminalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TerminalToolStripMenuItem.Click
         Tabs.AddStudioTerminal()
     End Sub
@@ -5904,7 +5900,7 @@ Friend Class frmManager
 
     Private Sub ReportABugToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportABugToolStripMenuItem.Click
         Try
-            System.Diagnostics.Process.Start("mailto:bionetworkscorp@gmail.com")
+            System.Diagnostics.Process.Start("https://github.com/theryan722/XDev-Studio/issues")
         Catch
         End Try
     End Sub
@@ -5914,8 +5910,8 @@ Friend Class frmManager
         newb.ShowDialog()
     End Sub
 
-    Private Sub BioNetWorksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BioNetWorksToolStripMenuItem.Click
-        System.Diagnostics.Process.Start("http://www.bionetworkscorp.net/")
+    Private Sub GithubToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles GithubToolStripMenuItem1.Click
+        System.Diagnostics.Process.Start("https://github.com/theryan722/XDev-Studio")
     End Sub
 
 #End Region
