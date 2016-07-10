@@ -3,8 +3,13 @@ Imports System.Windows.Forms
 
 Public Class FormPosition
 
+    ''' <summary>
+    ''' Centers a form
+    ''' </summary>
+    ''' <param name="frm">The form to center</param>
+    ''' <param name="parent">The form to center in</param>
+    ''' <remarks>Call from form load event</remarks>
     Public Shared Sub CenterForm(ByVal frm As Form, Optional ByVal parent As Form = Nothing)
-        '' Note: call this from frm's Load event!
         Dim r As Rectangle
         If parent IsNot Nothing Then
             r = parent.RectangleToScreen(parent.ClientRectangle)
