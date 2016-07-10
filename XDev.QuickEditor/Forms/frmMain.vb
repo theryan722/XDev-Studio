@@ -1058,6 +1058,7 @@ Public Class frmMain
 
 #Region "frmMain"
 
+    'If unsaved changes, display a confirmation dialog
     Private Sub frmMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         If issaved = False Then
             If MetroMessageBox.Show(Me, "You have unsaved changes, are you sure you want to exit without saving?", "Unsaved Changes", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.Yes Then
