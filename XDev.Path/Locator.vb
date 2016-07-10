@@ -9,6 +9,11 @@
         Return Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) & "\XDev Studio"
     End Function
 
+    ''' <summary>
+    ''' The studio location
+    ''' </summary>
+    ''' <returns>String, the path where the studio is located</returns>
+    ''' <remarks></remarks>
     Public Shared Function GetAppPath() As String
         Dim i As Integer
         Dim strAppPath As String
