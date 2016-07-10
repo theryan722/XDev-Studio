@@ -189,6 +189,12 @@ Public Class LanguageEnum
         End Select
     End Function
 
+    ''' <summary>
+    ''' Converts language enum to file extension
+    ''' </summary>
+    ''' <param name="lang"></param>
+    ''' <returns>String file extension of language enum</returns>
+    ''' <remarks></remarks>
     Public Shared Function ConvertEnumToExtension(ByVal lang As EditorLanguage) As String
         Select Case lang
             Case EditorLanguage.Ada
