@@ -68,7 +68,7 @@ Friend Class LanguageEnum
             Case EditorLanguage.Assembly
                 Return "Assembly"
             Case EditorLanguage.Batch
-                Return "Batchh"
+                Return "Batch"
             Case EditorLanguage.Csharp
                 Return "csharp"
             Case EditorLanguage.Cpp

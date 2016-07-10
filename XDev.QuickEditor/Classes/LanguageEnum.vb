@@ -69,6 +69,7 @@ Public Class LanguageEnum
     ''' Converts language enum to string equivalent
     ''' </summary>
     ''' <param name="lang"></param>
+    ''' <returns>String equivalent of the language enum</returns>
     ''' <remarks></remarks>
     Public Shared Function ConvertEnumToReadable(ByVal lang As EditorLanguage) As String
         Select Case lang
@@ -77,7 +78,7 @@ Public Class LanguageEnum
             Case EditorLanguage.Assembly
                 Return "Assembly"
             Case EditorLanguage.Batch
-                Return "Batchh"
+                Return "Batch"
             Case EditorLanguage.Csharp
                 Return "csharp"
             Case EditorLanguage.Cpp
