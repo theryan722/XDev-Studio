@@ -902,6 +902,7 @@ Public Class frmMain
         End If
     End Sub
 
+    'Sets the file location and provides the language to LoadFile()
     Public Sub OpenFile(ByVal filelocation As String)
         fileloc = filelocation
         LoadFile(fileloc, LanguageEnum.ConvertExtensionToEnum(System.IO.Path.GetExtension(fileloc)))
