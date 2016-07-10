@@ -1030,6 +1030,7 @@ Public Class frmMain
         End Select
     End Sub
 
+    'Update editor status when changes are made
     Private Sub TextBox1_SavePointLeft(sender As Object, e As EventArgs) Handles TextBox1.SavePointLeft
         If fileloc = "" Then
             Me.Text = "Untitled* - Quick Editor"
