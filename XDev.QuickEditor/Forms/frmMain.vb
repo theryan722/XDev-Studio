@@ -905,6 +905,7 @@ Public Class frmMain
         LoadFile(fileloc, LanguageEnum.ConvertExtensionToEnum(System.IO.Path.GetExtension(fileloc)))
     End Sub
 
+    'Initializes the editor, sets properties/values
     Private Sub InitializeEditor()
         TextBox1.SetSyntaxHighlightingArray(SyntaxHighlighting.GetHighlightArray)
 
