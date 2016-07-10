@@ -1,0 +1,12 @@
+@echo off
+
+:home
+echo This is the first page
+echo.
+pause
+goto page2
+
+:page2
+echo Welcome to page two.
+pause
+goto home

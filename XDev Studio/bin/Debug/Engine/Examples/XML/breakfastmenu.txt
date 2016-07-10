@@ -1,0 +1,18 @@
+<breakfast_menu>
+<food>
+<name>Belgian Waffles</name>
+<price>$5.95</price>
+<description>
+Belgian Waffles with maple syrup
+</description>
+<calories>650</calories>
+</food>
+<food>
+<name>Strawberry Belgian Waffles</name>
+<price>$7.95</price>
+<description>
+Belgian waffles covered with strawberries
+</description>
+<calories>900</calories>
+</food>
+</breakfast_menu>

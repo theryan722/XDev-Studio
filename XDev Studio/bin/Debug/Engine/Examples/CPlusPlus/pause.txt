@@ -1,0 +1,5 @@
+void pause()
+{
+  std::cout << std::endl << "When you press any key on the keyboard, the window will close.";
+  getchar();
+}

@@ -1,0 +1,3 @@
+@echo off
+echo The pause command pauses the command prompt.
+pause

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="ckeditor.js"></script>
+</head>
+<body>
+<textarea name="editor1">
+</textarea>
+<script>
+CKEDITOR.replace('editor1');
+</script>
+<script>
+CKEDITOR.on('instanceReady',
+      function( evt )
+      {
+         var editor = evt.editor;
+         editor.execCommand('maximize');
+      });
+</script>
+</body>
+</html>

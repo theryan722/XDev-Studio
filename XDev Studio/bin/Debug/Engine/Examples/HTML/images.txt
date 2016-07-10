@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="myimage.jpg" alt="mywebsite.com" width="100" height="150">
+
+</body>
+</html>

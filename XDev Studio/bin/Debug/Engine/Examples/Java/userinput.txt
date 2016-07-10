@@ -1,0 +1,10 @@
+public class userinput{
+public static void main(String[]args){
+
+Scanner reader = new Scanner(System.in);
+System.out.println("Enter a string");
+String a = "";
+a=reader.nextLine();
+
+}
+}

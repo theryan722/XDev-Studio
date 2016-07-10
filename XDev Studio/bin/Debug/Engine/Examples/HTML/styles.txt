@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 style="color:red">I am Red</h2>
+<h2 style="color:blue">I am Blue</h2>
+
+</body>
+</html>

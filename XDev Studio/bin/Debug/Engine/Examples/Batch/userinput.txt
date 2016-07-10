@@ -1,0 +1,6 @@
+@echo off
+echo User input example
+echo =============================================
+set /p myvariable=Value to set:
+echo %myvariable% was what you typed
+pause

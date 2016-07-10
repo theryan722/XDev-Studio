@@ -1,0 +1,2 @@
+import os
+os.spawnl(os.P_NOWAIT, 'some_long_running_command')

@@ -1,0 +1,842 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+XDev.API
+</name>
+</assembly>
+<members>
+<member name="M:XDev.API.BackupPP.BackupDocument">
+	<summary>
+ Performs a backup of the current document.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.BackupPP.BackupProject">
+	<summary>
+ Performs a backup of the current project.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.BackupPP.GetBackupsLocation">
+	<summary>
+ Gets the location where backups are stored.
+ </summary>
+	<returns>String, the location where backups are stored.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Log.WriteToLog(System.String)">
+	<summary>
+ Writes to the plugin log.
+ </summary>
+	<param name="msg">The text to write to the log.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Log.ClearLog">
+	<summary>
+ Clears the plugin log.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.ShowTrayNotification(System.String,System.String,System.Int32)">
+	<summary>
+ Displays a balloon notification from the tray icon.
+ </summary>
+	<param name="title">The title of the notification.</param>
+	<param name="msg">The body text of the notification.</param>
+	<param name="timeout">How long to display the notification for, in milliseconds.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.GetDefaultProjectLocation">
+	<summary>
+ Gets the default location where projects are stored.
+ </summary>
+	<returns>String, the default location where projects are stored.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.GetJavaClassPath">
+	<summary>
+ Gets the location the user set for the java class path.
+ </summary>
+	<returns>String, the location the user set for the java class path.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.GetDefaultDownloadsLocation">
+	<summary>
+ Gets the default location where downloaded files are stored.
+ </summary>
+	<returns>String, the default location where downloaded files are stored.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.ShowAlert(System.String,System.String)">
+	<summary>
+ Displays a message box on the studio.
+ </summary>
+	<param name="msg">The body text of the message box.</param>
+	<param name="title">The title text of the message box.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.GetVersion">
+	<summary>
+ Gets the version of XDev Studio.
+ </summary>
+	<returns>String, the version of this installation of XDev Studio.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.HideStudio">
+	<summary>
+ Hides the studio window.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.ShowStudio">
+	<summary>
+ Shows the studio window.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.MinimizeStudio">
+	<summary>
+ Minimizes the studio window.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.MaximizeStudio">
+	<summary>
+ Maximizes the studio window.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.StudioWindowStateNormal">
+	<summary>
+ Sets the studio window to a normal state.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.GetScenario">
+	<summary>
+ Gets the current scenario/project of this instance of the studio.
+ </summary>
+	<returns>Integer, 0 if the studio is in file mode, 1 if the studio is in project mode.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.CloseStudio">
+	<summary>
+ Exits out of the studio.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.NewInstance">
+	<summary>
+ Creates a new instance of the studio.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.SaveSettings">
+	<summary>
+ Saves the studio settings, including temporary settings.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.Save">
+	<summary>
+ Saves the document from the selected editor.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Studio.SaveAll">
+	<summary>
+ Saves all of the documents in the editors displayed on the tabcontrol. Only works in project mode.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Information.GetVendor">
+	<summary>
+ Gets the distributor of this software.
+ </summary>
+	<returns>String, the distributor name.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Information.GetVersion">
+	<summary>
+ Gets the version of this API.
+ </summary>
+	<returns>String, the version of the API.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Information.GetWebsite">
+	<summary>
+ Gets the website of the vendor.
+ </summary>
+	<returns>String, the website of the vendor.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Information.GetSupport">
+	<summary>
+ Gets the support website of the vendor.
+ </summary>
+	<returns>String, the support website of the vendor.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Information.GetContact">
+	<summary>
+ Gets the email of the vendor.
+ </summary>
+	<returns>String, the email of the vendor.</returns>
+	<remarks></remarks>
+</member><member name="P:XDev.API.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:XDev.API.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:XDev.API.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:XDev.API.Project.GetProjectName">
+	<summary>
+ Gets the name of the current project.
+ </summary>
+	<returns>String, the name of the project.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.GetProjectDeveloper">
+	<summary>
+ Gets the name of the project developer.
+ </summary>
+	<returns>string, the name of the project developer.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.GetDeveloperContact">
+	<summary>
+ Gets the email of the developer.
+ </summary>
+	<returns>String, the email of the developer.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.GetDeveloperWebsite">
+	<summary>
+ Gets the website of the developer.
+ </summary>
+	<returns>String, the website of the developer.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.GetProjectLanguage">
+	<summary>
+ Gets the language of the current project.
+ </summary>
+	<returns>String, the language of the project.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.GetProjectVersion">
+	<summary>
+ Gets the version of the current project.
+ </summary>
+	<returns>String, the version of the current project.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.GetProjectLocation">
+	<summary>
+ Gets the folder location of the current project.
+ </summary>
+	<returns>String, the folder location of the project.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.OpenProjectFolder">
+	<summary>
+ Opens an explorer window with the location of the project folder.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.CloseProject">
+	<summary>
+ Closes the project in the Studio and switches from Project mode to File mode.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.ImportFile">
+	<summary>
+ Shows the import file dialog, which imports a file into the current project.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.ImportFile(System.String)">
+	<summary>
+ Imports a file into the current project.
+ </summary>
+	<param name="fileloc">The location of the file to import into the project.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Project.LoadProject(System.String)">
+	<summary>
+ Loads a project in the studio.
+ </summary>
+	<param name="projloc">The folder location of the project (The root folder with the 'xdevproject_details.xdpf' file in it).</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.ToolPanel.AddTool(System.Windows.Forms.UserControl)">
+	<summary>
+ Adds content to the Tool Panel on the studio.
+ </summary>
+	<param name="tool"></param>
+	<remarks>The content to add. The Dockstyle is automatically set to top.</remarks>
+</member><member name="M:XDev.API.ToolPanel.GetNotepadText">
+	<summary>
+ Gets the text from the Tool Panel notepad.
+ </summary>
+	<returns>String, the text from the notepad.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.ToolPanel.SetNotepadText(System.String)">
+	<summary>
+ Sets the text of the Tool Panel notepad.
+ </summary>
+	<param name="txt">The text to set.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.TrayIcon.AddItemToTrayMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the studio tray icon.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToRunMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the Run menu.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToMenuStrip(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the main menu strip of the application.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToFileMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the File menu.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToEditMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the Edit menu.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToFormatMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the Format menu.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToInsertMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the Insert menu.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToViewMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the View menu.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToLanguageMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the Language menu.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToProjectMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the Project menu.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToToolsMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the Tools menu.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.MenuStrip.AddItemToAboutMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the About menu.
+ </summary>
+	<param name="item">The menu item to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddImageMapper">
+	<summary>
+ Adds a new image mapper tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.CurrentTabIsCodeEditor">
+	<summary>
+ Gets whether or not the current tab is a code editor tab.
+ </summary>
+	<returns>True if the current tab is a code editor tab, false otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddBookmarks">
+	<summary>
+ Adds a new bookmarks tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddRSSReader">
+	<summary>
+ Adds a new RSS reader tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddRSSReader(System.String)">
+	<summary>
+ Adds a new RSS reader tab and loads the specified feed.
+ </summary>
+	<param name="feed">The RSS feed to load.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddCodeMetrics">
+	<summary>
+ Adds a new code metrics tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddCodeMetrics(System.String)">
+	<summary>
+ Adds a new code metrics tab and calculate code metrics for the specified document.
+ </summary>
+	<param name="doc">The file location to load code metrics for.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddUniversalSearch">
+	<summary>
+ Adds a new Universal Search tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddUniversalSearch_OpenDocuments(System.String)">
+	<summary>
+ Adds a new Universal Search tab and searches for the specified string in all open documents.
+ </summary>
+	<param name="search">The term to search for.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddUniversalSearch_Project(System.String)">
+	<summary>
+ Adds a new Universal Search tab and searches for the specified string in the current project.
+ </summary>
+	<param name="search">The term to search for.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddWebBrowser">
+	<summary>
+ Adds a new web browser tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddWebBrowser(System.String)">
+	<summary>
+ Adds a new web browser tab and loads the specified website.
+ </summary>
+	<param name="url">The website to load.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddWebDocumentation">
+	<summary>
+ Adds a new web documentation tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddFileDownloader">
+	<summary>
+ Adds a new file downloader tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddFileDownloader(System.String,System.String)">
+	<summary>
+ Adds a new file downloader tab with a specified file to download.
+ </summary>
+	<param name="url">The URL of the file to download.</param>
+	<param name="downloadloc">The location to download the file to.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.CloseTab">
+	<summary>
+ Close the current tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.SelectTabByTitle(System.String)">
+	<summary>
+ Selects the tab with the specified title.
+ </summary>
+	<param name="title">The title of the tab to select.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.SetSelectedTabTitle(System.String)">
+	<summary>
+ Set the title of the currently selected tab.
+ </summary>
+	<param name="txt">The text to set for the title.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.GetSelectedTabTitle">
+	<summary>
+ Gets the title of the currently selected tab.
+ </summary>
+	<returns>String, the title of the currently selected tab.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddTestBrowser(System.String,System.String)">
+	<summary>
+ Adds a new test browser tab. Can load either a URL or load a document from a parameter.
+ </summary>
+	<param name="url">The URL of a website to load.</param>
+	<param name="doctext">The document text of a page to load.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddCalendar">
+	<summary>
+ Add a new calendar tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddCodeEditor">
+	<summary>
+ Add a new code editor tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddCodeEditor(System.String,System.String)">
+	<summary>
+ Add a new code editor tab with text.
+ </summary>
+	<param name="code">The text to set.</param>
+	<param name="lang">The language of the editor.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddCodeEditor(System.String,System.String,System.String,System.String)">
+	<summary>
+ Adds a code editor with text and the location of the source file (where the contents of the editor is saved to and read from).
+ </summary>
+	<param name="code">The text to set.</param>
+	<param name="lang">The language of the editor.</param>
+	<param name="fileloc">The file location of the source file (i.e. C:\Documents\myfile.cpp)</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddLogManager">
+	<summary>
+ Adds a new log manager tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddNotepad">
+	<summary>
+ Adds a new notepad tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddNotepad(System.String)">
+	<summary>
+ Adds a new notepad with text.
+ </summary>
+	<param name="txt">The text to set.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddNotepad(System.String,System.String)">
+	<summary>
+ Adds a notepad with text and the location of the source file (where the contents of the editor is saved to and read from).
+ </summary>
+	<param name="txt">The text to set.</param>
+	<param name="fileloc">The file location of the source file (i.e. C:\Documents\myfile.txt)</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddProcessViewer">
+	<summary>
+ Adds a new process viewer tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddTaskViewer">
+	<summary>
+ Adds a new tasks viewer tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddWelcome">
+	<summary>
+ Adds a new welcome page tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddCustomTab(WeifenLuo.WinFormsUI.Docking.DockContent)">
+	<summary>
+ Adds a tab with custom content.
+ </summary>
+	<param name="cust">The form to set as the content for the tab.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tabs.AddOptions">
+	<summary>
+ Adds a new options tab.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.ProjectExplorer.AddExplorerItem(System.Windows.Forms.UserControl)">
+	<summary>
+ Adds content to the Project Explorer panel on the studio.
+ </summary>
+	<param name="item">The content to add. The Dockstyle is automatically set to top.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.InsertText(System.String)">
+	<summary>
+ Inserts text as the current location.
+ </summary>
+	<param name="txt">The text to insert.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetSourceFileLocation">
+	<summary>
+ Gets the file location of the source file of the current editor.
+ </summary>
+	<returns>String, the file location of the source file of the current editor.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.AddItemToCodeEditorContextMenu(System.Windows.Forms.ToolStripMenuItem)">
+	<summary>
+ Adds a new menu item to the context menu of the code editor.
+ </summary>
+	<param name="item">The ToolStripMenuItem to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.RunFile">
+	<summary>
+ Attempts to run the source file of the code in the code editor.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.RunFile(System.Boolean,System.String)">
+	<summary>
+ Attempts to run the source file of the code in the code editor and displays its output in the editor.
+ </summary>
+	<param name="createnowindow">Whether or not the process should create a window.</param>
+	<param name="args">The arguments to launch with the process.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.ShowGotoLine">
+	<summary>
+ Shows the Goto-line dialog.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.SearchSelectionOnWeb">
+	<summary>
+ Searches the selected text on Google.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.ShowSearch">
+	<summary>
+ Shows the search dialog.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.Print">
+	<summary>
+ Shows the print dialog.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.PrintPreview">
+	<summary>
+ Shows the print preview dialog.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.PageSetup">
+	<summary>
+ Shows the page setup dialog.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetSelectedText">
+	<summary>
+ Gets the selected text in the code editor.
+ </summary>
+	<returns>String, the text the user has selected in the code editor.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetAllText">
+	<summary>
+ Gets all of the text from the code editor.
+ </summary>
+	<returns>String, all of the text in the code editor.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetExportedHTML">
+	<summary>
+ Gets the HTML version of the code from the editor.
+ </summary>
+	<returns>String, the exported HTML of the code.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetFont">
+	<summary>
+ Gets the font of the code editor.
+ </summary>
+	<returns>System.Drawing.Font, the font of the code editor.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetForeColor">
+	<summary>
+ Gets the forecolor of the text of the code editor.
+ </summary>
+	<returns>System.Drawing.Color, the forecolor of the text in the code editor.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetBackColor">
+	<summary>
+ Gets the backcolor of the code editor.
+ </summary>
+	<returns>System.Drawing.Color, the backcolor of the code editor.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.AddText(System.String)">
+	<summary>
+ Appends text to the code editor.
+ </summary>
+	<param name="txt">The text to add.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.SetText(System.String)">
+	<summary>
+ Sets the text of the code editor.
+ </summary>
+	<param name="txt">The text to set.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.SetFont(System.Drawing.Font)">
+	<summary>
+ Sets the font of the code editor.
+ </summary>
+	<param name="nfont">The font to set.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.SetForeColor(System.Drawing.Color)">
+	<summary>
+ Sets the forecolor of the code editor.
+ </summary>
+	<param name="fcolor">The color to set as the forecolor.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.SetBackColor(System.Drawing.Color)">
+	<summary>
+ Sets the backcolor of the code editor.
+ </summary>
+	<param name="bcolor">The color to set as the backcolor.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetCurrentLineNumber">
+	<summary>
+ Gets the line number of the current line of the code editor.
+ </summary>
+	<returns>Integer, the current line number.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GoToLine(System.Int32)">
+	<summary>
+ Sets the current line to the specified number.
+ </summary>
+	<param name="linenumber">The line number to go to.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetWordFromPosition(System.Int32)">
+	<summary>
+ Gets the word at the specified position.
+ </summary>
+	<param name="pos">The position to get the word from.</param>
+	<returns>String, the word at the specified position.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetCurrentPosition">
+	<summary>
+ Gets the current position of the caret in the code editor.
+ </summary>
+	<returns>Integer, the current caret position.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.SetCurrentPosition(System.Int32)">
+	<summary>
+ Sets the current position of the caret in the code editor.
+ </summary>
+	<param name="pos">The position to set the caret.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetCharAtPosition(System.Int32)">
+	<summary>
+ Gets the char at the specified position.
+ </summary>
+	<param name="pos">The position to get the char.</param>
+	<returns>Char, the char at the specified position.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetLineCount">
+	<summary>
+ Gets the total amount of lines in the document.
+ </summary>
+	<returns>Integer, the total amount of lines in the document.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.CodeEditor.GetTextOfCurrentLine">
+	<summary>
+ Gets the text of the current line.
+ </summary>
+	<returns>String, the text of the current line.</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.API.EditCommands.Cut">
+	<summary>
+ Performs the cut command on the selected editor.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.EditCommands.Copy">
+	<summary>
+ Performs the copy command on the selected editor.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.EditCommands.Paste">
+	<summary>
+ Performs the paste command on the selected editor.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.EditCommands.Clear">
+	<summary>
+ Performs the clear command on the selected editor.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.EditCommands.SelectAll">
+	<summary>
+ Performs the selectall command on the selected editor.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.EditCommands.ShowFindReplace">
+	<summary>
+ Shows the find replace dialog on the selected editor.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.EditCommands.Undo">
+	<summary>
+ Performs the undo command on the selected editor.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.EditCommands.Redo">
+	<summary>
+ Performs the redo command on the selected editor.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.LanguageRunner.CompileC">
+	<summary>
+ Compiles the current documents source file using the GCC C compiler.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.LanguageRunner.RunC">
+	<summary>
+ Run the current documents compiled C code.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.LanguageRunner.CompileCPP">
+	<summary>
+ Compiles the current documents source file using the GCC C++ compiler.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.LanguageRunner.RunCPP">
+	<summary>
+ Runs the current documents compiled C++ code.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.LanguageRunner.CompileJava">
+	<summary>
+ Compiles the current documents source file using the Java compiler.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.LanguageRunner.RunJava">
+	<summary>
+ Runs the current documents compiled Java code.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.LanguageRunner.CompileCustom">
+	<summary>
+ Compiles the current documents source file using the custom compiler.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.LanguageRunner.RunCustom">
+	<summary>
+ Runs the current documents compiled code.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.LanguageRunner.TestHTMLCodeInBrowser">
+	<summary>
+ Tests the code of the current editor in the test browser, does NOT load the source file.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.LanguageRunner.TestHTMLFileInBrowser">
+	<summary>
+ Tests the source file of the current editor in the test browser.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.EncryptPP.EncryptDocument">
+	<summary>
+ Encrypts the current document.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.EncryptPP.DecryptDocument">
+	<summary>
+ Decrypts the current document.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.API.WelcomeTab.SetImage(System.String)">
+	<summary>
+ Sets the custom image for the welcome tab.
+ </summary>
+	<param name="loc">The file location of the image.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.WelcomeTab.DisplayImage(System.Boolean)">
+	<summary>
+ Whether or not to display the welcome tab custom image.
+ </summary>
+	<param name="dispimage">Whether to display the welcome tab custom image. True if yes, False if no.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Language.SetCustomLanguage(System.String)">
+	<summary>
+ Sets a custom language for the selected editor.
+ </summary>
+	<param name="loc">The location of the language file for the custom language.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Language.SetLanguage(XDev_Studio.LanguageEnum.Language)">
+	<summary>
+ Sets the language for the selected editor.
+ </summary>
+	<param name="lang">The language for the selected editor.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Language.SetCustomSyntaxHighlighting(System.String,System.String,System.String)">
+	<summary>
+ Sets custom highlighting for keywords in the selected editor.
+ </summary>
+	<param name="keywords1">The first list of keywords. Usually a languages reserved words.</param>
+	<param name="keywords2">The second list of keywords.</param>
+	<param name="commentprefix">The character or character combination used to denote the beginning of a comment.</param>
+	<remarks></remarks>
+</member><member name="M:XDev.API.Tasks.AddTask(System.String)">
+	<summary>
+ Adds a new task to the task list.
+ </summary>
+	<param name="task"></param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

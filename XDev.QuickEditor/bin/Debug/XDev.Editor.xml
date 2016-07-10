@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+XDev.Editor
+</name>
+</assembly>
+<members>
+<member name="P:XDev.Editor.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:XDev.Editor.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:XDev.Editor.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:XDev.Editor.PrintDoc._font">
+	<summary>
+ Property variable for the Font the user wishes to use
+ </summary>
+	<remarks></remarks>
+</member><member name="F:XDev.Editor.PrintDoc._text">
+	<summary>
+ Property variable for the text to be printed
+ </summary>
+	<remarks></remarks>
+</member><member name="P:XDev.Editor.PrintDoc.TextToPrint">
+	<summary>
+ Property to hold the text that is to be printed
+ </summary>
+	<value></value>
+	<returns>A string</returns>
+	<remarks></remarks>
+</member><member name="P:XDev.Editor.PrintDoc.PrinterFont">
+	<summary>
+ Property to hold the font the users wishes to use
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:XDev.Editor.PrintDoc.#ctor">
+	<summary>
+ Empty constructor
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.Editor.PrintDoc.#ctor(System.String)">
+	<summary>
+ Constructor to initialize our printing object
+ and the text it's supposed to be printing
+ </summary>
+	<param name="str">Text that will be printed</param>
+	<remarks></remarks>
+</member><member name="M:XDev.Editor.PrintDoc.OnBeginPrint(System.Drawing.Printing.PrintEventArgs)">
+	<summary>
+ Override the default OnBeginPrint method of the PrintDocument Object
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:XDev.Editor.PrintDoc.OnPrintPage(System.Drawing.Printing.PrintPageEventArgs)">
+	<summary>
+ Override the default OnPrintPage method of the PrintDocument
+ </summary>
+	<param name="e"></param>
+	<remarks>This provides the print logic for our document</remarks>
+</member><member name="M:XDev.Editor.PrintDoc.RemoveZeros(System.Int32)">
+	<summary>
+ Function to replace any zeros in the size to a 1
+ Zero's will mess up the printing area
+ </summary>
+	<param name="value">Value to check</param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

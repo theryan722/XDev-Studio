@@ -1,0 +1,5 @@
+public class startprocess{
+public static void main(String[]args){
+Process myProcess = new ProcessBuilder(command, arg).start();
+}
+}

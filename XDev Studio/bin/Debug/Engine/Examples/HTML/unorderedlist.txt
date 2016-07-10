@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Unordered List with Default Bullets</h2>
+
+<ul>
+ <li>Apples</li>
+ <li>Bananas</li>
+ <li>Lemons</li>
+ <li>Oranges</li>
+</ul>  
+
+</body>
+</html>

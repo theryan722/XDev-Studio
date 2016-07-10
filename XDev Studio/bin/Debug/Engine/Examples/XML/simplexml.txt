@@ -1,0 +1,6 @@
+<note>
+<to>Grace</to>
+<from>Joe</from>
+<heading>Reminder</heading>
+<body>Remember to get eggs</body>
+</note>

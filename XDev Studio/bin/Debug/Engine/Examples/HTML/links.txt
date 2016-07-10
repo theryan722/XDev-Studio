@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="http://www.mywebsite.com">This is a link</a>
+
+</body>
+</html>

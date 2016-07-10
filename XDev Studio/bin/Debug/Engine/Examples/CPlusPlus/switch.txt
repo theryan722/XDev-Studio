@@ -1,0 +1,15 @@
+#include <iostream>
+int main()
+{
+switch (expression)
+{
+  case constant1:
+     group-of-statements-1;
+     break;
+  case constant2:
+     group-of-statements-2;
+     break;
+  default:
+     default-group-of-statements
+}
+}

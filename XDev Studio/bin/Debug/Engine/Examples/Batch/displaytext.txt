@@ -1,0 +1,5 @@
+@echo off
+title Display Text
+echo This displays text.
+echo.
+echo the period after echo creates a blank line

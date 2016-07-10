@@ -1,0 +1,35 @@
+XDev Studio can be launched with several command parameters, in addition to a file location.
+
+Usage examples: 
+
+xxxx\XDev Studio.exe -commandhere
+xxxx\XDev Studio.exe -width 300 -height 300
+
+Commands:
+
+-editor - Opens a new editor tab.
+-notepad - Opens a new notepad tab.
+-calendar - Opens a new calendar tab.
+-processviewer - Opens a new process viewer tab.
+-webbrowser - Opens a new web browser tab.
+-filedownloader - Opens a new file downloader tab.
+-differenceviewer - Opens a new difference viewer tab.
+-codemetrics - Opens a new code metrics tab.
+-serviceviewer - Opens a new service viewer tab.
+-rssreader - Opens a new RSS reader tab.
+-coderecovery - Opens a new code recovery tab.
+-diagrammer - Opens a new diagrammer tab.
+-codebank - Opens a new codebank tab.
+-mapper - Opens a new image mapper tab.
+-colorpicker - Displays the color picker.
+-imageviewer - Displays the image viewer.
+-multiinstance - Launches another instance of the studio.
+-tray - Open straight to the tray icon.
+-help - Display this help message.
+-fullscreen - Open the studio in fullscreen.
+-distractionfree - Open the studio in distraction free mode.
+-topmost - Open the studio in topmost.
+-width x - Sets the width (x) of the studio.
+-height y - Sets the height of the studio (y).
+-xpos x - Sets the x position of the studio (x).
+-ypos y - Sets the y position of the studio (y).

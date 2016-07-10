@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="background-color:black; color:white; margin:20px; padding:20px;">
+
+<h2>Lorem ipsum</h2>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dolor erat, elementum sed mattis vel, posuere eget mi. Cras elit.
+</p>
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ex elit, mollis nec orci pellentesque, suscipit porttitor dui. Proin ultricies.
+</p>
+
+</div> 
+
+</body>
+</html>

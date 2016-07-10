@@ -1,0 +1,76 @@
+xdev minimize studio
+xdev maximize studio
+xdev window state normal
+xdev show studio
+xdev hide studio
+xdev exit studio
+xdev stop speech
+xdev insert scraped html
+xdev view tool panel
+xdev view project explorer
+xdev view welcome page
+xdev view tips
+xdev view tasks
+xdev view logs
+xdev open document location
+xdev open calendar
+xdev open notepad
+xdev open process viewer
+xdev open web browser
+xdev open file downloader
+xdev open site previewer
+xdev open options
+xdev open about
+xdev open documentation
+xdev open command prompt
+xdev open registry editor
+xdev export to html
+xdev backup project
+xdev backup document
+xdev encrypt project
+xdev encrypt document
+xdev new file
+xdev new project
+xdev open project
+xdev open file
+xdev save
+xdev save as
+xdev save all
+xdev print
+xdev print preview
+xdev page setup
+xdev new instance
+xdev close project
+xdev import file
+xdev open project folder
+xdev close tab
+xdev close all tabs
+xdev set language ada
+xdev set language assembly
+xdev set language batch
+xdev set language csharp
+xdev set language see plus plus
+xdev set language css
+xdev set language fortran
+xdev set language html
+xdev set language java
+xdev set language javascript
+xdev set language lisp
+xdev set language lua
+xdev set language pascal
+xdev set language perl
+xdev set language php
+xdev set language postgresql
+xdev set language python
+xdev set language ruby
+xdev set language smalltalk
+xdev set language sql
+xdev set language vbscript
+xdev set language xml
+xdev set language yaml
+xdev compile java
+xdev run java
+xdev compile c
+xdev run c
+xdev compile see plus plus
+xdev run see plus plus

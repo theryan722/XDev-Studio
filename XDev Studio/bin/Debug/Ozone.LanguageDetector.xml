@@ -1,0 +1,464 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Ozone.LanguageDetector
+</name>
+</assembly>
+<members>
+<member name="M:Ozone.LanguageDetector.Detector.DetectLanguageFromFile(System.String)">
+	<summary>
+ Detects the language based on the file extension
+ </summary>
+	<param name="fileloc">The location of the file.</param>
+	<returns>The language of the file. Returns Language.Language</returns>
+	<remarks></remarks>
+</member><member name="M:Ozone.LanguageDetector.Detector.DetectLanguageFromSnippet(System.String)">
+	<summary>
+ Detects the language of a snippet of code
+ </summary>
+	<param name="snippet">The code snippet</param>
+	<returns>The language of the snippet. Returns Language.Language</returns>
+	<remarks></remarks>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Ada">
+	<summary>
+  Looks up a localized string similar to -- 
+procedure
+begin
+overriding
+terminate
+delay
+limited
+synchronized
+pragma
+tagged.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Assembly">
+	<summary>
+  Looks up a localized string similar to mov
+syscall
+db
+# 
+.ascii
+.text
+.global
+call
+ret
+push
+lea
+pop.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Batch">
+	<summary>
+  Looks up a localized string similar to @echo off
+echo
+pause
+cd
+cls
+dir
+start
+ping
+move
+type
+goto
+exit.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Cpp">
+	<summary>
+  Looks up a localized string similar to alignas
+alignof
+#include
+iostream
+virtual
+.h
+dynamic_cast
+std::
+{
+}
+int main()
+//
+;
+&lt;&lt;
+&gt;&gt;.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_CSharp">
+	<summary>
+  Looks up a localized string similar to delegate
+{
+}
+using
+namespace
+System.Linq;
+System.Collections.Generic;
+System.Text;
+System..
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Css">
+	<summary>
+  Looks up a localized string similar to color:
+width:
+height:
+background-color:
+margin:
+padding:
+position:
+text-align:
+background:
+list-style:
+filter:
+display:
+margin-left:
+overflow:
+-webkit-perspective:
+perspective:
+float:
+font:
+right:
+border:
+cursor:
+{
+}.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Fortran">
+	<summary>
+  Looks up a localized string similar to elemental
+bind
+deferred
+enumerator
+assign
+backspace
+subroutine
+rewrite
+write
+implicit
+format
+equivalence
+dimension
+cp,,pm
+namelist
+nullify
+elsewhere
+deallocate
+allocatable
+allocate
+flush
+non_overridable
+nopass
+codimension
+contiguous
+critical
+block
+block data
+lock
+unlock
+inquire
+intrinsic.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Html">
+	<summary>
+  Looks up a localized string similar to &lt;html&gt;
+&lt;body&gt;
+&lt;b&gt;
+&lt;i&gt;
+&lt;b&gt;
+&lt;u&gt;
+&lt;p&gt;
+&lt;sub&gt;
+&lt;sup&gt;
+&lt;h1&gt;
+&lt;h2&gt;
+&lt;h3&gt;
+&lt;!DOCTYPE html&gt;
+&lt;a href=
+&lt;a&gt;
+&lt;img src=
+&lt;head&gt;
+&lt;pre&gt;
+&lt;!--
+--&gt;.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Java">
+	<summary>
+  Looks up a localized string similar to assert
+{
+}
+scrictfp
+package
+super
+instanceof
+import
+javax.
+public static void main(String[] args)
+java..
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_JavaScript">
+	<summary>
+  Looks up a localized string similar to debugger
+export
+arguments
+package
+synchronized
+transient
+Infinity
+NaN
+prototype
+isPrototypeOf
+hasOwnProperty
+document.write
+document.getElementById
+.innerHTML
+alert.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Lisp">
+	<summary>
+  Looks up a localized string similar to #|
+defun
+equal
+equalp
+case-insensitive
+find-symbol
+in-package
+hyphens
+setf
+flet
+labels
+lambda
+funcall
+unwind-protect
+handler-bind
+handler-case
+ignore-errors
+deftype
+.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Lua">
+	<summary>
+  Looks up a localized string similar to repeat
+::=
+lua_pop
+lua_close
+lua_
+#include
+lua.h
+va_list
+va_start
+va_end
+extern
+luaopen
+--[[
+--.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Pascal">
+	<summary>
+  Looks up a localized string similar to threadvar
+raise
+library
+finalization
+initialization
+procedure
+record
+repeat
+shl
+shr
+unit
+on
+inline
+label
+constructor
+continue
+destructor
+asm
+div
+downto
+implementation
+(*
+*)
+:=
+{
+}
+writeln.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Perl">
+	<summary>
+  Looks up a localized string similar to exec
+setpgrp
+setpriority
+shift
+__DATA__
+__END__
+__FILE__
+__LINE__
+__PACKAGE__
+cmp
+CORE
+exp
+eq
+ge
+gt
+le
+lock
+lt
+qw
+qx
+tr
+qq
+qr
+ne
+no
+#!/usr/bin/perl
+is_dir
+use strict;
+::.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Php">
+	<summary>
+  Looks up a localized string similar to __halt_compiler
+clone
+callable
+empty
+die
+endswitch
+include_once
+unset
+insteadof
+require_once
+trait
+__CLASS__
+__NAMESPACE__
+__DIR__
+__TRAIT__
+__FILE__
+__FUNCTION__
+__LINE__
+__METHOD__
+&lt;?php
+unlink
+header('
+mysql_query.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Python">
+	<summary>
+  Looks up a localized string similar to def
+lambda
+exec
+except
+import
+pass
+continue
+#!/usr/bin/python
+.py
+Label(
+Tkinter.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Ruby">
+	<summary>
+  Looks up a localized string similar to puts
+def
+end
+__ENCODING__
+__END__
+__FILE__
+alias
+defined?
+ensure
+module
+rescue
+unless
+undef.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_SmallTalk">
+	<summary>
+  Looks up a localized string similar to :=
+arrayconst:
+bytearray:
+number:
+string:
+charconst:
+symconst:
+exp:
+block:
+keyexpr
+choose:
+cancel:
+for:
+#(
+#[
+#! /usr/local/bin/gst
+| 
+[|.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Sql">
+	<summary>
+  Looks up a localized string similar to SELECT
+FULL
+INSERT
+ABORT
+ACTION
+BEFORE
+FROM
+ORDER
+GO
+USE
+ALTER
+DATABASE
+DISTINCT
+EXISTS
+WHERE
+IN
+AND
+GROUP
+TABLE
+STATISTICS
+SYSTEM_USER
+LINENO
+CROSS
+CREATE.
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Vb">
+	<summary>
+  Looks up a localized string similar to addhandler
+addressof
+imports
+cobj
+cint
+cchar
+cstr
+implements
+module
+sub
+^
+step
+short
+resume
+raiseevent
+removehandler
+overloads
+byval
+byref
+optional
+shared
+object
+me..
+</summary>
+</member><member name="P:Ozone.LanguageDetector.My.Resources.Resources.Identifiers_Xml">
+	<summary>
+  Looks up a localized string similar to &lt;
+&gt;
+&lt;?xml.
+</summary>
+</member><member name="T:Ozone.LanguageDetector.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

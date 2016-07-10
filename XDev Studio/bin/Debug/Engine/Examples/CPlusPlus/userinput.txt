@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <stdio.h>
+
+using namespace std;
+int main() {
+
+ string input = "";
+
+ // How to get a string/sentence with spaces
+ cout << "Hi there! Please enter a string:\n>";
+ getline(cin, input);
+ cout << "The string you entered is: " << input << endl << endl;
+}

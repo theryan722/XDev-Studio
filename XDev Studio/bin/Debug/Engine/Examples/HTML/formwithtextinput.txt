@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+First name:<br>
+<input type="text" name="firstname">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</form>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+<p>Curabitur quis nisi et arcu sodales lobortis sed et nulla. Maecenas gravida.</p>
+
+</body>
+</html>
