@@ -943,6 +943,7 @@ Public Class frmMain
         TextBox1.WrapMode = ScintillaNET.WrapMode.None
     End Sub
 
+    'Saves the current file
     Public Sub SaveFile()
         Try
             Dim objWriter As New System.IO.StreamWriter(fileloc, False)
