@@ -65,6 +65,11 @@ Public Class LanguageEnum
         End Select
     End Function
 
+    ''' <summary>
+    ''' Converts language enum to string equivalent
+    ''' </summary>
+    ''' <param name="lang"></param>
+    ''' <remarks></remarks>
     Public Shared Function ConvertEnumToReadable(ByVal lang As EditorLanguage) As String
         Select Case lang
             Case EditorLanguage.Ada
