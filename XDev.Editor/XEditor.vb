@@ -15,6 +15,7 @@ Public Class XEditor
 #Region "Variables"
 
     Private _curlang As EditorLanguage = EditorLanguage.PlainText 'The current language of the editor
+    Private _fontname As String = "Consolas" 'The current font name of the editor
     Private _fontsize As Integer = 10
     Private _fonto As Font
     Private _autoclist As String = ""
