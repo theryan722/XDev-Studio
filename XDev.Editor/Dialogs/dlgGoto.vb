@@ -24,6 +24,7 @@ Public Class dlgGoto
         txtLine.Text = curline
     End Sub
 
+    'Set in the editor that the dialog is no longer being displayed
     Private Sub dlgGoto_FormClosing(sender As Object, e As Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         _editor.gotodlgshowing = False
     End Sub
