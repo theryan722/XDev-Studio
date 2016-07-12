@@ -110,6 +110,7 @@
         editor = ed
     End Sub
 
+    'Set in the editor that the dialog is no longer being displayed
     Private Sub dlgClipboardHistory_FormClosing(sender As Object, e As Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         editor.clipboardhistorydlgshowing = False
     End Sub
