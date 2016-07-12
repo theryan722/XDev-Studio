@@ -594,6 +594,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The rendering technology used
+    ''' </summary>
     Property Technology() As ScintillaNET.Technology
         Get
             Return Scintilla1.Technology
