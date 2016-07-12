@@ -365,6 +365,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether smart indentation is enabled
+    ''' </summary>
     Property SmartIndentation As Boolean
 
     Property MatchBraces() As Boolean
