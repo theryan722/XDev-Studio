@@ -1213,6 +1213,7 @@ Public Class XEditor
         Scintilla1.IndicatorClearRange(0, Scintilla1.TextLength)
     End Sub
 
+    'Highlights all matches of the specified text
     Private Sub HighlightAllMatchingWords(ByVal txt As String)
         Try
             If FindAll(txt, SearchFlags.None, False).Count > 1 Then
