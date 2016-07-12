@@ -34,7 +34,7 @@ Public Class XEditor
     Private SyntaxHighlightingArray(87) As Color 'Array of colors for syntax highlighting
     Public searchselect_start As Integer = -1 'Selection start anchor
     Public searchselect_end As Integer = -1 'Selection end anchor
-    Private tabtriggerslist As List(Of String)
+    Private tabtriggerslist As List(Of String) 'List of tab triggers
     Public codetemplatelist As List(Of String)
     Public codetemplatesdlgshowing As Boolean = False
     Public clipboardhistorydlgshowing As Boolean = False
