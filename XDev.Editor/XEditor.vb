@@ -726,6 +726,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether vertical scrolling ends at the last line or can scroll past
+    ''' </summary>
     Property EndAtLastLine() As Boolean
         Get
             Return Scintilla1.EndAtLastLine
