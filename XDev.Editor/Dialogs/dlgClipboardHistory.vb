@@ -48,7 +48,8 @@
             End If
         End If
     End Sub
-    
+
+    'Clears the clipboard history
     Private Sub ClearHistory()
         editor.ClearClipboardHistory()
         RefreshList()
