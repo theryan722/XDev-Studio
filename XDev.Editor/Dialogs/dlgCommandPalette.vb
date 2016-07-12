@@ -12,6 +12,7 @@
         Next
     End Sub
 
+    'The list of commands that are placed in the listbox
     Private Sub AddCommandsToList()
         cmdlist.Add("BackTab")
         cmdlist.Add("Cancel")
