@@ -4,6 +4,7 @@
 
 #Region "Methods"
 
+    'Inserts the selected symbol into the editor
     Private Sub InsertSelectedSymbol()
         If ListBox1.SelectedIndex <> -1 Then
             editor.Scintilla1.InsertText(editor.Scintilla1.CurrentPosition, ListBox1.SelectedItem)
