@@ -196,6 +196,9 @@ Public Class XEditor
     ''' </summary>
     Property HighlightMatchingWords As Boolean
 
+    ''' <summary>
+    ''' Whether to record the clipboard history
+    ''' </summary>
     Property RecordClipboardHistory As Boolean = True
 
     Property HomeEndKeysNavigateWrappedLines As Boolean
