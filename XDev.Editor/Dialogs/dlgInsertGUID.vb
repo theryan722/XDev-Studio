@@ -152,6 +152,7 @@ Public Class dlgInsertGUID
         End Try
     End Sub
 
+    'Set in the editor that the dialog is no longer being displayed
     Private Sub dlgInsertGUID_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         editor.insertguiddlgshowing = False
     End Sub
