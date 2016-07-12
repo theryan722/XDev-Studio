@@ -522,6 +522,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether to use the wait cursor for the control
+    ''' </summary>
     Shadows Property UseWaitCursor() As Boolean
         Get
             Return Scintilla1.UseWaitCursor
