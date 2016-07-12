@@ -245,6 +245,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The list of code templates
+    ''' </summary>
     Property CodeTemplates As List(Of String)
         Get
             Return codetemplatelist
