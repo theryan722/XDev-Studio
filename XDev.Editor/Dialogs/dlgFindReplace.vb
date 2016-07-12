@@ -275,6 +275,7 @@ Public Class dlgFindReplace
 
 #Region "Methods"
 
+    'Before searching and replacing, update labels and the textbox
     Private Sub ReplacePreActions()
         lblStatus.Text = "[]"
         If txt_replace_find.Text <> "" And txt_replace_find.Text <> " " And Not txt_replace_find.Items.Contains(txt_replace_find.Text) Then
