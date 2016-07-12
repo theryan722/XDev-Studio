@@ -5,8 +5,6 @@ Imports ScintillaNET.SearchFlags
 Public Class dlgFindReplace
     Private editor As XEditor
     Private _cso As Boolean = True 'Constrain Search Options
-    Private find_tstart As Integer
-    Private find_tend As Integer
 
 #Region "StatusStrip"
 
