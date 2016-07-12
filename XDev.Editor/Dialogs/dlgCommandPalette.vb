@@ -1,6 +1,6 @@
 ﻿Public Class dlgCommandPalette
     Private editor As XEditor
-    Private cmdlist As New List(Of String)
+    Private cmdlist As New List(Of String) 'The list of commands
 
 #Region "Methods"
 
