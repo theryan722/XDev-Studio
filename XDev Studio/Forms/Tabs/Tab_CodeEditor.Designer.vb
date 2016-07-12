@@ -1411,7 +1411,6 @@ Partial Class Tab_CodeEditor
         Me.TextBox1.CurrentPosition = 0
         Me.TextBox1.CustomLanguageEnabled = False
         Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox1.EditorAllowDrop = False
         Me.TextBox1.EditorMode = XDev.Editor.XEditor.Mode.Editor
         Me.TextBox1.EndAtLastLine = True
         Me.TextBox1.EolMode = ScintillaNET.Eol.CrLf
@@ -1471,7 +1470,6 @@ Partial Class Tab_CodeEditor
         Me.TextBox2.CurrentPosition = 0
         Me.TextBox2.CustomLanguageEnabled = False
         Me.TextBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox2.EditorAllowDrop = False
         Me.TextBox2.EditorMode = XDev.Editor.XEditor.Mode.Editor
         Me.TextBox2.EndAtLastLine = True
         Me.TextBox2.EolMode = ScintillaNET.Eol.CrLf
@@ -1530,7 +1528,6 @@ Partial Class Tab_CodeEditor
         Me.txt_documentmap.CurrentPosition = 0
         Me.txt_documentmap.CustomLanguageEnabled = False
         Me.txt_documentmap.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txt_documentmap.EditorAllowDrop = False
         Me.txt_documentmap.EditorMode = XDev.Editor.XEditor.Mode.DocumentMap
         Me.txt_documentmap.EndAtLastLine = True
         Me.txt_documentmap.EolMode = ScintillaNET.Eol.CrLf

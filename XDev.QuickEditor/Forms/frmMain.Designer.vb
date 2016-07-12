@@ -1420,7 +1420,6 @@ Partial Class frmMain
         Me.TextBox1.CurrentPosition = 0
         Me.TextBox1.CustomLanguageEnabled = False
         Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TextBox1.EditorAllowDrop = False
         Me.TextBox1.EditorMode = XDev.Editor.XEditor.Mode.Editor
         Me.TextBox1.EndAtLastLine = True
         Me.TextBox1.EolMode = ScintillaNET.Eol.CrLf

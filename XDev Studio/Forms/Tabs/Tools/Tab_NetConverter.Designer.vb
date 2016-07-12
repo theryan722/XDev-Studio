@@ -114,7 +114,6 @@ Partial Class Tab_NetConverter
         Me.XEditor1.CurrentPosition = 0
         Me.XEditor1.CustomLanguageEnabled = False
         Me.XEditor1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.XEditor1.EditorAllowDrop = True
         Me.XEditor1.EditorMode = XDev.Editor.XEditor.Mode.Editor
         Me.XEditor1.EndAtLastLine = True
         Me.XEditor1.EolMode = ScintillaNET.Eol.CrLf

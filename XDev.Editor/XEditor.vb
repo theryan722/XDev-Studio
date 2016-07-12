@@ -462,15 +462,6 @@ Public Class XEditor
         End Set
     End Property
 
-    Property EditorAllowDrop() As Boolean
-        Get
-            Return Scintilla1.AllowDrop
-        End Get
-        Set(value As Boolean)
-            Scintilla1.AllowDrop = value
-        End Set
-    End Property
-
     Property MultiPaste() As ScintillaNET.MultiPaste
         Get
             Return Scintilla1.MultiPaste

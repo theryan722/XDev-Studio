@@ -54,7 +54,6 @@ Partial Class frmPreview
         Me.TextBox1.Font = New Font("Consolas", 10)
         Me.TextBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TextBox1.Text = ""
-        Me.TextBox1.EditorAllowDrop = False
         Me.TextBox1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.TextBox1.EditorMode = XDev.Editor.XEditor.Mode.Editor
         Me.TextBox1.UseWaitCursor = False
