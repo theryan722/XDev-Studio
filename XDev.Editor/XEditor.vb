@@ -370,6 +370,9 @@ Public Class XEditor
     ''' </summary>
     Property SmartIndentation As Boolean
 
+    ''' <summary>
+    ''' Whether brace matching is enabled
+    ''' </summary>
     Property MatchBraces() As Boolean
         Get
             Return _bracematch
