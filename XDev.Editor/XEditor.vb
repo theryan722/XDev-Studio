@@ -171,6 +171,9 @@ Public Class XEditor
     ''' </summary>
     Property SmartPaste As Boolean = True
 
+    ''' <summary>
+    ''' Whether performance mode is enabled
+    ''' </summary>
     Property PerformanceMode As Boolean = False
 
     Property SmartCopy As Boolean = True
