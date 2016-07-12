@@ -26,7 +26,6 @@
         InsertSelectedSymbol()
     End Sub
 
-
 #End Region
 
 #Region "dlgInsertSymbol"
