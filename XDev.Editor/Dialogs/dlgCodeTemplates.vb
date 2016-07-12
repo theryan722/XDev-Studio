@@ -22,6 +22,7 @@
         Return finarg
     End Function
 
+    'Inserts the selected item into the editor
     Private Sub InsertSelected()
         If ListBox1.SelectedIndex <> -1 Then
             If editor.codetemplatelist.Count > 0 Then
