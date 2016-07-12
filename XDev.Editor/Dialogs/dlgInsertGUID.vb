@@ -6,6 +6,7 @@ Public Class dlgInsertGUID
 
 #Region "Methods"
 
+    'Converts the selected item into its equivalent GUID
     Private Function ConvertItemToGUID(ByVal item As String) As String
         Dim ret As String = ""
         Select Case item
