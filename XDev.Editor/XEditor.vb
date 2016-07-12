@@ -510,6 +510,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether to use a mixture of tabs and spaces for indentation or purely spaces
+    ''' </summary>
     Property UseTabs() As Boolean
         Get
             Return Scintilla1.UseTabs
