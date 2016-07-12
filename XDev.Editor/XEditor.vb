@@ -714,6 +714,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether to display indentation guides
+    ''' </summary>
     Property IndentationGuides() As ScintillaNET.IndentView
         Get
             Return Scintilla1.IndentationGuides
