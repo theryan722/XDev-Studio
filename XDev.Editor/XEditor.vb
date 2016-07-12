@@ -166,6 +166,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether smart paste is enabled
+    ''' </summary>
     Property SmartPaste As Boolean = True
 
     Property PerformanceMode As Boolean = False
