@@ -274,6 +274,9 @@ Public Class XEditor
     ''' </summary>
     Property TabTriggersEnabled As Boolean = False
 
+    ''' <summary>
+    ''' Whether a tab trigger will replace the line or be inserted in its place
+    ''' </summary>
     Property TabTriggersReplacePhrase As Boolean = True
 
     Property CurrentPosition As Integer
