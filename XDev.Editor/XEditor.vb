@@ -462,6 +462,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The behavior for pasting into multiple selections
+    ''' </summary>
     Property MultiPaste() As ScintillaNET.MultiPaste
         Get
             Return Scintilla1.MultiPaste
