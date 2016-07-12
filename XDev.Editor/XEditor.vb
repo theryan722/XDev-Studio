@@ -327,6 +327,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Gets or replaces the currently selected text
+    ''' </summary>
     Property SelectedText As String
         Get
             Return Scintilla1.SelectedText
