@@ -24,4 +24,5 @@
     Public Const AUTOCLIST_VB As String = "empty isempty nothing isnothing null isnull true false cdate date dateadd datediff datepart dateserial datevalue day formatdatetime hour isdate minute month monthname now second time timer timeserial timevalue weekday weekdayname year asc cbool cbyte ccur cdate cdbl chr cint clng csng cstr hex oct formatcurrency formatdatetime formatnumber formatpercent abs atn cost exp hex int fix log oct rnd sgn sin sqr tan array filter isarray join lbound split ubound instr instrrev lcase left len ltrim rtrim trim mid replace right space strcomp string strreverse ucase createobject eval isempty isnull isnumeric isobject rgb round scriptengine scriptenginebuildversion scriptenginemajorversion scriptengineminorversion typename vartype"
     Public Const AUTOCLIST_XML As String = ""
     Public Const AUTOCLIST_YAML As String = ""
+
 End Module
