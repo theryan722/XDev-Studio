@@ -329,6 +329,7 @@
 
 #Region "txt_search"
 
+    'Removes unrelated items when searching
     Private Sub txt_search_TextChanged(sender As Object, e As EventArgs) Handles txt_search.TextChanged
         If txt_search.Text = "" Then
             RefreshList()
