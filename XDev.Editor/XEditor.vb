@@ -750,6 +750,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Sets the end-of-line mode
+    ''' </summary>
     Property EolMode() As ScintillaNET.Eol
         Get
             Return Scintilla1.EolMode
