@@ -181,6 +181,9 @@ Public Class XEditor
     ''' </summary>
     Property SmartCopy As Boolean = True
 
+    ''' <summary>
+    ''' Whether the custom language is enabled
+    ''' </summary>
     Property CustomLanguageEnabled As Boolean = False
 
     Property HighlightMatchingSelection As Boolean
