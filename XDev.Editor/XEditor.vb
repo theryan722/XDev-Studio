@@ -157,7 +157,7 @@ Public Class XEditor
     ''' <summary>
     ''' Whether the control can accept data that the user drags onto it
     ''' </summary>
-    Shadows Property AllowDrop As Boolean
+    Shadows Property AllowDrop() As Boolean
         Get
             Return Scintilla1.AllowDrop
         End Get
@@ -169,42 +169,42 @@ Public Class XEditor
     ''' <summary>
     ''' Whether smart paste is enabled
     ''' </summary>
-    Property SmartPaste As Boolean = True
+    Property SmartPaste() As Boolean = True
 
     ''' <summary>
     ''' Whether performance mode is enabled
     ''' </summary>
-    Property PerformanceMode As Boolean = False
+    Property PerformanceMode() As Boolean = False
 
     ''' <summary>
     ''' Whether smart copy is enabled
     ''' </summary>
-    Property SmartCopy As Boolean = True
+    Property SmartCopy() As Boolean = True
 
     ''' <summary>
     ''' Whether the custom language is enabled
     ''' </summary>
-    Property CustomLanguageEnabled As Boolean = False
+    Property CustomLanguageEnabled() As Boolean = False
 
     ''' <summary>
     ''' Whether to highlight matches of the selection
     ''' </summary>
-    Property HighlightMatchingSelection As Boolean
+    Property HighlightMatchingSelection() As Boolean
 
     ''' <summary>
     ''' Whether to highlight matches of the current word
     ''' </summary>
-    Property HighlightMatchingWords As Boolean
+    Property HighlightMatchingWords() As Boolean
 
     ''' <summary>
     ''' Whether to record the clipboard history
     ''' </summary>
-    Property RecordClipboardHistory As Boolean = True
+    Property RecordClipboardHistory() As Boolean = True
 
     ''' <summary>
     ''' Whether the home and end keys navigate wrapped lines
     ''' </summary>
-    Property HomeEndKeysNavigateWrappedLines As Boolean
+    Property HomeEndKeysNavigateWrappedLines() As Boolean
         Get
             Return hekeysnavwrapline
         End Get
@@ -223,7 +223,7 @@ Public Class XEditor
     ''' <summary>
     ''' The clipboard history
     ''' </summary>
-    Property ClipboardHistory As List(Of String)
+    Property ClipboardHistory() As List(Of String)
         Get
             Return listclipboardhistory
         End Get
@@ -235,7 +235,7 @@ Public Class XEditor
     ''' <summary>
     ''' Whether the current folding block is highlighted
     ''' </summary>
-    Property HighlightCurrentBlock As Boolean
+    Property HighlightCurrentBlock() As Boolean
         Get
             Return blockhighlight
         End Get
@@ -248,7 +248,7 @@ Public Class XEditor
     ''' <summary>
     ''' The list of code templates
     ''' </summary>
-    Property CodeTemplates As List(Of String)
+    Property CodeTemplates() As List(Of String)
         Get
             Return codetemplatelist
         End Get
@@ -260,7 +260,7 @@ Public Class XEditor
     ''' <summary>
     ''' The list of tab triggers
     ''' </summary>
-    Property TabTriggers As List(Of String)
+    Property TabTriggers() As List(Of String)
         Get
             Return tabtriggerslist
         End Get
@@ -272,17 +272,17 @@ Public Class XEditor
     ''' <summary>
     ''' Whether tab triggers are enabled
     ''' </summary>
-    Property TabTriggersEnabled As Boolean = False
+    Property TabTriggersEnabled() As Boolean = False
 
     ''' <summary>
     ''' Whether a tab trigger will replace the line or be inserted in its place
     ''' </summary>
-    Property TabTriggersReplacePhrase As Boolean = True
+    Property TabTriggersReplacePhrase() As Boolean = True
 
     ''' <summary>
     ''' The current caret position
     ''' </summary>
-    Property CurrentPosition As Integer
+    Property CurrentPosition() As Integer
         Get
             Return Scintilla1.CurrentPosition
         End Get
@@ -294,7 +294,7 @@ Public Class XEditor
     ''' <summary>
     ''' Whether the current line is highlighted
     ''' </summary>
-    Property HighlightCurrentLine As Boolean
+    Property HighlightCurrentLine() As Boolean
         Get
             Return Scintilla1.CaretLineVisible
         End Get
@@ -306,7 +306,7 @@ Public Class XEditor
     ''' <summary>
     ''' Whether typing affects multiple selections
     ''' </summary>
-    Property MultiSelectionTyping As Boolean
+    Property MultiSelectionTyping() As Boolean
         Get
             Return Scintilla1.AdditionalSelectionTyping
         End Get
@@ -318,7 +318,7 @@ Public Class XEditor
     ''' <summary>
     ''' The caret display style
     ''' </summary>
-    Property CaretStyle As ScintillaNET.CaretStyle
+    Property CaretStyle() As ScintillaNET.CaretStyle
         Get
             Return Scintilla1.CaretStyle
         End Get
@@ -330,7 +330,7 @@ Public Class XEditor
     ''' <summary>
     ''' Gets or replaces the currently selected text
     ''' </summary>
-    Property SelectedText As String
+    Property SelectedText() As String
         Get
             Return Scintilla1.SelectedText
         End Get
@@ -342,7 +342,7 @@ Public Class XEditor
     ''' <summary>
     ''' The document used by the control
     ''' </summary>
-    Property Document As ScintillaNET.Document
+    Property Document() As ScintillaNET.Document
         Get
             Return Scintilla1.Document
         End Get
@@ -354,7 +354,7 @@ Public Class XEditor
     ''' <summary>
     ''' Whether changes have been made
     ''' </summary>
-    Property Saved As Boolean
+    Property Saved() As Boolean
         Get
             Return Scintilla1.Modified
         End Get
@@ -368,7 +368,7 @@ Public Class XEditor
     ''' <summary>
     ''' Whether smart indentation is enabled
     ''' </summary>
-    Property SmartIndentation As Boolean
+    Property SmartIndentation() As Boolean
 
     ''' <summary>
     ''' Whether brace matching is enabled
@@ -390,7 +390,7 @@ Public Class XEditor
     ''' <summary>
     ''' Whether smart completion is enabled
     ''' </summary>
-    Public Property SmartCompletion As Boolean = False
+    Public Property SmartCompletion() As Boolean = False
 
     ''' <summary>
     ''' Whether auto complete is enabled
@@ -410,7 +410,7 @@ Public Class XEditor
         End Set
     End Property
 
-    Shadows Property Font As Font
+    Shadows Property Font() As Font
         Get
             If _fonto Is Nothing Then
                 _fonto = New Font(_fontname, _fontsize)
