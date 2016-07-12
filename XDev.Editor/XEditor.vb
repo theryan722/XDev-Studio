@@ -17,7 +17,7 @@ Public Class XEditor
     Private _curlang As EditorLanguage = EditorLanguage.PlainText 'The current language of the editor
     Private _fontname As String = "Consolas" 'The current font name of the editor
     Private _fontsize As Integer = 10 'Set in the editor that the dialog is no longer being displayed
-    Private _fonto As Font
+    Private _fonto As Font 'Font object that wraps font size and name
     Private _autoclist As String = ""
     Private _maxLineNumberCharLength As Integer
     Private _lastCaretPos As Integer = 0
