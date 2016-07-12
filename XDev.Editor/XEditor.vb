@@ -23,7 +23,7 @@ Public Class XEditor
     Private _lastCaretPos As Integer = 0 'The last position of the caret
     Private _bracematch As Boolean = True 'Whether or not to match braces
     Public finddlgshowing As Boolean = False 'Whether the find replace dialog is showing
-    Public gotodlgshowing As Boolean = False
+    Public gotodlgshowing As Boolean = False 'Whether the goto line dialog is showing
     Private _pagesetup As PrintDocument = New PrintDocument()
     Private _psissetup As Boolean = False '_pagesetup is setup
     Private _smartcompletion_pressedkey As System.Windows.Forms.Keys
