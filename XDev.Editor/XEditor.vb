@@ -24,7 +24,7 @@ Public Class XEditor
     Private _bracematch As Boolean = True 'Whether or not to match braces
     Public finddlgshowing As Boolean = False 'Whether the find replace dialog is showing
     Public gotodlgshowing As Boolean = False 'Whether the goto line dialog is showing
-    Private _pagesetup As PrintDocument = New PrintDocument()
+    Private _pagesetup As PrintDocument = New PrintDocument() 'The page setup object
     Private _psissetup As Boolean = False '_pagesetup is setup
     Private _smartcompletion_pressedkey As System.Windows.Forms.Keys
     Private _custlang_keyword0 As String = ""
