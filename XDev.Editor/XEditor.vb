@@ -37,7 +37,7 @@ Public Class XEditor
     Private tabtriggerslist As List(Of String) 'List of tab triggers
     Public codetemplatelist As List(Of String) 'List of code templates
     Public codetemplatesdlgshowing As Boolean = False 'Whether the code templates dialog is showing
-    Public clipboardhistorydlgshowing As Boolean = False
+    Public clipboardhistorydlgshowing As Boolean = False 'Whether the clipboard history dialog is showing
     Private blockhighlight As Boolean = False
     Public insertsymboldlgshowing As Boolean = False
     Public listclipboardhistory As List(Of String)
