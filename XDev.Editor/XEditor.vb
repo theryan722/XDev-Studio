@@ -50,6 +50,7 @@ Public Class XEditor
 
 #Region "Enum"
 
+    'The mode the editor is in - default is editor.
     Enum Mode
         Editor
         DocumentMap
