@@ -130,6 +130,7 @@ Public Class dlgInsertGUID
         Return ret
     End Function
 
+    'Inserts the selected item into the editor
     Private Sub InsertSelectedSymbol()
         If ListBox1.SelectedIndex <> -1 Then
             editor.Scintilla1.InsertText(editor.Scintilla1.CurrentPosition, ConvertItemToGUID(ListBox1.SelectedItem))
