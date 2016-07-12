@@ -654,6 +654,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The current lexer
+    ''' </summary>
     Property Lexer() As ScintillaNET.Lexer
         Get
             Return Scintilla1.Lexer
