@@ -410,6 +410,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The font of the editor
+    ''' </summary>
     Shadows Property Font() As Font
         Get
             If _fonto Is Nothing Then
