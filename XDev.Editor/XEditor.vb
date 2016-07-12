@@ -642,6 +642,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether rectangular selection mode can be switched to while making a selection with the mouse
+    ''' </summary>
     Property MouseSelectionRectangularSwitch() As Boolean
         Get
             Return Scintilla1.MouseSelectionRectangularSwitch
