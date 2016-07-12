@@ -40,7 +40,7 @@ Public Class XEditor
     Public clipboardhistorydlgshowing As Boolean = False 'Whether the clipboard history dialog is showing
     Private blockhighlight As Boolean = False 'Highlighting of folding blocks
     Public insertsymboldlgshowing As Boolean = False 'Whether the insert symbol dialog is showing
-    Public listclipboardhistory As List(Of String)
+    Public listclipboardhistory As List(Of String) 'Clipboard history
     Public justpasted As Boolean = False
     Private hekeysnavwrapline As Boolean = False
     Public cmdpalettedlgshowing As Boolean = False
