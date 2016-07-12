@@ -59,6 +59,7 @@ Public Class XEditor
 #End Region
 
 #Region "Syntax Colors"
+
     'Default use of color is to use as forecolor for text, unless otherwise specified
     Private COLOR_DEFAULT As Color = Color.Black
     Private COLOR_COMMENT As Color = Color.FromArgb(0, 128, 0) 'Green
@@ -148,6 +149,7 @@ Public Class XEditor
     Private COLOR_BINARY As Color = Color.Navy
     Private COLOR_SUPER As Color = Color.LightBlue
     Private COLOR_SELF As Color = Color.MediumSlateBlue
+
 #End Region
 
 #Region "Properties"
