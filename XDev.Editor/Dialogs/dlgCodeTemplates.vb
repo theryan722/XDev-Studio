@@ -13,6 +13,7 @@
         Next
     End Sub
 
+    'Replaces the delimeters in the template with the appropriate value
     Private Function ProcessTemplateText(ByVal txt As String) As String
         Dim finarg As String = txt
         finarg = finarg.Replace("$st$", editor.Scintilla1.SelectedText)
