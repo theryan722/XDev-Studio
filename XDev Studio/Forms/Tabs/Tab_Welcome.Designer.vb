@@ -28,8 +28,8 @@ Partial Class Tab_Welcome
         Me.label_title = New MetroFramework.Controls.MetroLabel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btn_bionetworkssupport = New MetroFramework.Controls.MetroButton()
-        Me.btn_bionetworkshome = New MetroFramework.Controls.MetroButton()
+        Me.btn_support = New MetroFramework.Controls.MetroButton()
+        Me.btn_home = New MetroFramework.Controls.MetroButton()
         Me.btn_openfile = New MetroFramework.Controls.MetroButton()
         Me.btn_openproject = New MetroFramework.Controls.MetroButton()
         Me.btn_newfile = New MetroFramework.Controls.MetroButton()
@@ -105,33 +105,33 @@ Partial Class Tab_Welcome
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.btn_bionetworkssupport)
-        Me.Panel2.Controls.Add(Me.btn_bionetworkshome)
+        Me.Panel2.Controls.Add(Me.btn_support)
+        Me.Panel2.Controls.Add(Me.btn_home)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel2.Location = New System.Drawing.Point(0, 535)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(200, 23)
         Me.Panel2.TabIndex = 5
         '
-        'btn_bionetworkssupport
+        'btn_support
         '
-        Me.btn_bionetworkssupport.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btn_bionetworkssupport.Location = New System.Drawing.Point(100, 0)
-        Me.btn_bionetworkssupport.Name = "btn_bionetworkssupport"
-        Me.btn_bionetworkssupport.Size = New System.Drawing.Size(100, 23)
-        Me.btn_bionetworkssupport.TabIndex = 1
-        Me.btn_bionetworkssupport.Text = "Support"
-        Me.btn_bionetworkssupport.UseSelectable = True
+        Me.btn_support.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btn_support.Location = New System.Drawing.Point(100, 0)
+        Me.btn_support.Name = "btn_support"
+        Me.btn_support.Size = New System.Drawing.Size(100, 23)
+        Me.btn_support.TabIndex = 1
+        Me.btn_support.Text = "Support"
+        Me.btn_support.UseSelectable = True
         '
-        'btn_bionetworkshome
+        'btn_home
         '
-        Me.btn_bionetworkshome.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btn_bionetworkshome.Location = New System.Drawing.Point(0, 0)
-        Me.btn_bionetworkshome.Name = "btn_bionetworkshome"
-        Me.btn_bionetworkshome.Size = New System.Drawing.Size(100, 23)
-        Me.btn_bionetworkshome.TabIndex = 0
-        Me.btn_bionetworkshome.Text = "Home"
-        Me.btn_bionetworkshome.UseSelectable = True
+        Me.btn_home.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btn_home.Location = New System.Drawing.Point(0, 0)
+        Me.btn_home.Name = "btn_home"
+        Me.btn_home.Size = New System.Drawing.Size(100, 23)
+        Me.btn_home.TabIndex = 0
+        Me.btn_home.Text = "Home"
+        Me.btn_home.UseSelectable = True
         '
         'btn_openfile
         '
@@ -259,8 +259,8 @@ Partial Class Tab_Welcome
     Friend WithEvents label_title As MetroFramework.Controls.MetroLabel
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents btn_bionetworkssupport As MetroFramework.Controls.MetroButton
-    Friend WithEvents btn_bionetworkshome As MetroFramework.Controls.MetroButton
+    Friend WithEvents btn_support As MetroFramework.Controls.MetroButton
+    Friend WithEvents btn_home As MetroFramework.Controls.MetroButton
     Friend WithEvents btn_openfile As MetroFramework.Controls.MetroButton
     Friend WithEvents btn_openproject As MetroFramework.Controls.MetroButton
     Friend WithEvents btn_newfile As MetroFramework.Controls.MetroButton

@@ -16,12 +16,12 @@
         frmManager.OpenFileToolStripMenuItem.PerformClick()
     End Sub
 
-    Private Sub btn_bionetworkshome_Click(sender As Object, e As EventArgs) Handles btn_bionetworkshome.Click
-        System.Diagnostics.Process.Start("http://www.bionetworkscorp.net/")
+    Private Sub btn_home_Click(sender As Object, e As EventArgs) Handles btn_home.Click
+        System.Diagnostics.Process.Start("https://github.com/theryan722/XDev-Studio")
     End Sub
 
-    Private Sub btn_bionetworkssupport_Click(sender As Object, e As EventArgs) Handles btn_bionetworkssupport.Click
-        System.Diagnostics.Process.Start("http://www.bionetworkscorp.net/support")
+    Private Sub btn_support_Click(sender As Object, e As EventArgs) Handles btn_support.Click
+        System.Diagnostics.Process.Start("https://github.com/theryan722/XDev-Studio/issues")
     End Sub
 
     Private Sub check_showatstartup_CheckedChanged(sender As Object, e As EventArgs) Handles check_showatstartup.CheckedChanged
