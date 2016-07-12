@@ -4,6 +4,7 @@
 
 #Region "Methods"
 
+    'Clears the listbox and populates it with editor commands
     Private Sub RefreshList()
         ListBox1.Items.Clear()
         For Each item As String In cmdlist
