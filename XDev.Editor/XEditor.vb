@@ -38,7 +38,7 @@ Public Class XEditor
     Public codetemplatelist As List(Of String) 'List of code templates
     Public codetemplatesdlgshowing As Boolean = False 'Whether the code templates dialog is showing
     Public clipboardhistorydlgshowing As Boolean = False 'Whether the clipboard history dialog is showing
-    Private blockhighlight As Boolean = False
+    Private blockhighlight As Boolean = False 'Highlighting of folding blocks
     Public insertsymboldlgshowing As Boolean = False
     Public listclipboardhistory As List(Of String)
     Public justpasted As Boolean = False
