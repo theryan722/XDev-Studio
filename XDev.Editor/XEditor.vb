@@ -220,6 +220,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The clipboard history
+    ''' </summary>
     Property ClipboardHistory As List(Of String)
         Get
             Return listclipboardhistory
