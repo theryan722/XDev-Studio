@@ -339,6 +339,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The document used by the control
+    ''' </summary>
     Property Document As ScintillaNET.Document
         Get
             Return Scintilla1.Document
