@@ -383,9 +383,13 @@ Public Class XEditor
     End Property
 
     ''' <summary>
+    ''' The mode of the editor
     ''' </summary>
     Property EditorMode() As Mode = Mode.Editor
 
+    ''' <summary>
+    ''' Whether smart completion is enabled
+    ''' </summary>
     Public Property SmartCompletion As Boolean = False
 
     Public Property AutoComplete() As Boolean
