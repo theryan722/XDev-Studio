@@ -22,7 +22,7 @@ Public Class XEditor
     Private _maxLineNumberCharLength As Integer 'Character length used to determine width of line number margin
     Private _lastCaretPos As Integer = 0 'The last position of the caret
     Private _bracematch As Boolean = True 'Whether or not to match braces
-    Public finddlgshowing As Boolean = False
+    Public finddlgshowing As Boolean = False 'Whether the find replace dialog is showing
     Public gotodlgshowing As Boolean = False
     Private _pagesetup As PrintDocument = New PrintDocument()
     Private _psissetup As Boolean = False '_pagesetup is setup
