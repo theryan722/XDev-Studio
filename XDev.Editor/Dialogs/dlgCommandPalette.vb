@@ -116,6 +116,7 @@
         cmdlist.Add("ZoomOut")
     End Sub
 
+    'Handles and executes the selected command
     Private Sub ProcessCommand(ByVal txt As String)
         Select Case txt
             Case "BackTab"
