@@ -53,7 +53,6 @@ Partial Class XEditor
         Me.Scintilla1.Name = "Scintilla1"
         Me.Scintilla1.Size = New System.Drawing.Size(594, 431)
         Me.Scintilla1.TabIndex = 0
-        Me.Scintilla1.UseTabs = False
         '
         'pnl_incrementalsearcher
         '
