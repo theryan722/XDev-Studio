@@ -191,6 +191,9 @@ Public Class XEditor
     ''' </summary>
     Property HighlightMatchingSelection As Boolean
 
+    ''' <summary>
+    ''' Whether to highlight matches of the current word
+    ''' </summary>
     Property HighlightMatchingWords As Boolean
 
     Property RecordClipboardHistory As Boolean = True
