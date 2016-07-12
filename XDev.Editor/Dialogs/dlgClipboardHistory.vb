@@ -39,6 +39,7 @@
         End If
     End Sub
 
+    'Copies the selected item from the listbox into the clipboard
     Private Sub CopySelectedItem()
         If ListBox1.SelectedIndex <> -1 AndAlso editor.ClipboardHistory.Count > 0 Then
             My.Computer.Clipboard.SetText(editor.ClipboardHistory(ListBox1.SelectedIndex))
