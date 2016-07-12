@@ -430,6 +430,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The document text
+    ''' </summary>
     Shadows Property Text() As String
         Get
             Return Scintilla1.Text
