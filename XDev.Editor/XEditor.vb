@@ -20,7 +20,6 @@ Public Class XEditor
     Private _fonto As Font 'Font object that wraps font size and name
     Private _autoclist As String = "" 'The auto complete list
     Private _maxLineNumberCharLength As Integer 'Character length used to determine width of line number margin
-    Private _lastCaretPos As Integer = 0
     Private _bracematch As Boolean = True
     Public finddlgshowing As Boolean = False
     Public gotodlgshowing As Boolean = False
