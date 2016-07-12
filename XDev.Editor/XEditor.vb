@@ -1208,6 +1208,7 @@ Public Class XEditor
         Scintilla1.AssignCmdKey(Keys.Control Or Keys.W, Command.Null) 'Clipboard history
     End Sub
 
+    'Clears the indicators for matching words
     Private Sub ClearMatchingWordHighlights()
         Scintilla1.IndicatorCurrent = 8
         Scintilla1.IndicatorClearRange(0, Scintilla1.TextLength)
