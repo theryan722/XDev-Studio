@@ -702,6 +702,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether to display the vertical scroll bar
+    ''' </summary>
     Property VScrollBar() As Boolean
         Get
             Return Scintilla1.VScrollBar
