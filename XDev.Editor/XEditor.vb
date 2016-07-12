@@ -486,6 +486,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether the document is read only
+    ''' </summary>
     Property IsReadOnly() As Boolean
         Get
             Return Scintilla1.ReadOnly
