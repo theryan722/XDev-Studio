@@ -269,6 +269,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether tab triggers are enabled
+    ''' </summary>
     Property TabTriggersEnabled As Boolean = False
 
     Property TabTriggersReplacePhrase As Boolean = True
