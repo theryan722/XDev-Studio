@@ -351,6 +351,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether changes have been made
+    ''' </summary>
     Property Saved As Boolean
         Get
             Return Scintilla1.Modified
