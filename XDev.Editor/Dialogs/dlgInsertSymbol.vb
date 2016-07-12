@@ -1,5 +1,34 @@
 ﻿Public Class dlgInsertSymbol
+
     Private editor As XEditor
+
+#Region "Methods"
+
+    Private Sub InsertSelectedSymbol()
+        If ListBox1.SelectedIndex <> -1 Then
+            editor.Scintilla1.InsertText(editor.Scintilla1.CurrentPosition, ListBox1.SelectedItem)
+            Me.Close()
+        End If
+    End Sub
+
+#End Region
+
+#Region "ListBox1"
+
+    Private Sub ListBox1_KeyDown(sender As Object, e As Windows.Forms.KeyEventArgs) Handles ListBox1.KeyDown
+        If e.KeyCode = Windows.Forms.Keys.Enter Then
+            InsertSelectedSymbol()
+        End If
+    End Sub
+
+    Private Sub ListBox1_MouseDoubleClick(sender As Object, e As Windows.Forms.MouseEventArgs) Handles ListBox1.MouseDoubleClick
+        InsertSelectedSymbol()
+    End Sub
+
+
+#End Region
+
+#Region "dlgInsertSymbol"
 
     Public Sub New(ByRef ed As XEditor)
         InitializeComponent()
@@ -17,21 +46,6 @@
         End Try
     End Sub
 
-    Private Sub InsertSelectedSymbol()
-        If ListBox1.SelectedIndex <> -1 Then
-            editor.Scintilla1.InsertText(editor.Scintilla1.CurrentPosition, ListBox1.SelectedItem)
-            Me.Close()
-        End If
-    End Sub
-
-    Private Sub ListBox1_KeyDown(sender As Object, e As Windows.Forms.KeyEventArgs) Handles ListBox1.KeyDown
-        If e.KeyCode = Windows.Forms.Keys.Enter Then
-            InsertSelectedSymbol()
-        End If
-    End Sub
-
-    Private Sub ListBox1_MouseDoubleClick(sender As Object, e As Windows.Forms.MouseEventArgs) Handles ListBox1.MouseDoubleClick
-        InsertSelectedSymbol()
-    End Sub
+#End Region
 
 End Class
