@@ -273,6 +273,37 @@ Public Class dlgFindReplace
 
 #Region "Replace"
 
+#Region "Methods"
+
+    Private Sub ReplacePreActions()
+        lblStatus.Text = "[]"
+        If txt_replace_find.Text <> "" And txt_replace_find.Text <> " " And Not txt_replace_find.Items.Contains(txt_replace_find.Text) Then
+            txt_replace_find.Items.Add(txt_replace_find.Text)
+        End If
+        If txt_replace_replace.Text <> "" And txt_replace_replace.Text <> " " And Not txt_replace_replace.Items.Contains(txt_replace_replace.Text) Then
+            txt_replace_replace.Items.Add(txt_replace_replace.Text)
+        End If
+    End Sub
+
+    Private Function GetReplaceSearchFlags() As Integer
+        Dim sflags As Integer = 0
+        If check_replace_matchcase.Checked Then
+            sflags += SearchFlags.MatchCase
+        End If
+        If check_replace_wholeword.Checked Then
+            sflags += SearchFlags.WholeWord
+        End If
+        If check_replace_wordstart.Checked Then
+            sflags += SearchFlags.WordStart
+        End If
+        If Not check_replace_matchcase.Checked And Not check_replace_wholeword.Checked And Not check_replace_wordstart.Checked Then
+            sflags = SearchFlags.None
+        End If
+        Return sflags
+    End Function
+
+#End Region
+
     Private Sub btn_replace_all_Click(sender As Object, e As EventArgs) Handles btn_replace_all.Click
         If chk_replace_searchselection.Checked Then
             editor.Scintilla1.SetSelection(editor.searchselect_end, editor.searchselect_start)
@@ -347,32 +378,6 @@ Public Class dlgFindReplace
         End If
     End Sub
 
-    Private Sub ReplacePreActions()
-        lblStatus.Text = "[]"
-        If txt_replace_find.Text <> "" And txt_replace_find.Text <> " " And Not txt_replace_find.Items.Contains(txt_replace_find.Text) Then
-            txt_replace_find.Items.Add(txt_replace_find.Text)
-        End If
-        If txt_replace_replace.Text <> "" And txt_replace_replace.Text <> " " And Not txt_replace_replace.Items.Contains(txt_replace_replace.Text) Then
-            txt_replace_replace.Items.Add(txt_replace_replace.Text)
-        End If
-    End Sub
-
-    Private Function GetReplaceSearchFlags() As Integer
-        Dim sflags As Integer = 0
-        If check_replace_matchcase.Checked Then
-            sflags += SearchFlags.MatchCase
-        End If
-        If check_replace_wholeword.Checked Then
-            sflags += SearchFlags.WholeWord
-        End If
-        If check_replace_wordstart.Checked Then
-            sflags += SearchFlags.WordStart
-        End If
-        If Not check_replace_matchcase.Checked And Not check_replace_wholeword.Checked And Not check_replace_wordstart.Checked Then
-            sflags = SearchFlags.None
-        End If
-        Return sflags
-    End Function
     Private Sub check_replace_wordstart_CheckedChanged(sender As Object, e As EventArgs) Handles check_replace_wordstart.CheckedChanged
         If _cso Then
             check_find_wordstart.CheckState = check_replace_wordstart.CheckState
