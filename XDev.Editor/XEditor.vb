@@ -1246,6 +1246,8 @@ Public Class XEditor
         Catch
         End Try
     End Sub
+
+    'Sets up code folding, sets appropriate markers and margin info for code folding
     Private Sub SetCodeFolding()
         If EditorMode = Mode.Editor Then
             Scintilla1.SetProperty("fold", "1")
