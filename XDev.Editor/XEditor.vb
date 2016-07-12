@@ -442,6 +442,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether the elements are aligned to support right-to-left fonts
+    ''' </summary>
     Shadows Property RightToLeft() As Boolean
         Get
             If Scintilla1.RightToLeft = Windows.Forms.RightToLeft.Yes Then
