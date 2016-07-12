@@ -534,6 +534,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' How to display whitespace characters
+    ''' </summary>
     Property ViewWhitespace() As ScintillaNET.WhitespaceMode
         Get
             Return Scintilla1.ViewWhitespace
