@@ -630,6 +630,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The time in milliseconds the mouse must linger to  raise the DwellStart event
+    ''' </summary>
     Property MouseDwellTime() As Integer
         Get
             Return Scintilla1.MouseDwellTime
