@@ -257,6 +257,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The list of tab triggers
+    ''' </summary>
     Property TabTriggers As List(Of String)
         Get
             Return tabtriggerslist
