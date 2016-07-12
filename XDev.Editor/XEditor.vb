@@ -186,6 +186,9 @@ Public Class XEditor
     ''' </summary>
     Property CustomLanguageEnabled As Boolean = False
 
+    ''' <summary>
+    ''' Whether to highlight matches of the selection
+    ''' </summary>
     Property HighlightMatchingSelection As Boolean
 
     Property HighlightMatchingWords As Boolean
