@@ -4,6 +4,7 @@
 
 #Region "Methods"
 
+    'Clear the listbox and fill it with the clipboard history
     Private Sub RefreshList()
         ListBox1.Items.Clear()
         If editor.ClipboardHistory.Count > 0 Then
