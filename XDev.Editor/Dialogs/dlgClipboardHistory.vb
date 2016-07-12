@@ -18,6 +18,7 @@
         End If
     End Sub
 
+    'Inserts the selected item from the listbox into the editor
     Private Sub InsertSelectedItem()
         If ListBox1.SelectedIndex <> -1 AndAlso editor.ClipboardHistory.Count > 0 Then
             editor.InsertText(editor.ClipboardHistory(ListBox1.SelectedIndex))
