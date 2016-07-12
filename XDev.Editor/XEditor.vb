@@ -232,6 +232,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether the current folding block is highlighted
+    ''' </summary>
     Property HighlightCurrentBlock As Boolean
         Get
             Return blockhighlight
