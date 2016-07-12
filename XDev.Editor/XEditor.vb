@@ -42,7 +42,7 @@ Public Class XEditor
     Public insertsymboldlgshowing As Boolean = False 'Whether the insert symbol dialog is showing
     Public listclipboardhistory As List(Of String) 'Clipboard history
     Public justpasted As Boolean = False 'Whether something was pasted into the editor and not yet added to the clipboard history
-    Private hekeysnavwrapline As Boolean = False
+    Private hekeysnavwrapline As Boolean = False 'Whether the home and end keys navigate wrapped lines
     Public cmdpalettedlgshowing As Boolean = False
     Public insertguiddlgshowing As Boolean = False
 
