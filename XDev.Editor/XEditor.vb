@@ -392,6 +392,9 @@ Public Class XEditor
     ''' </summary>
     Public Property SmartCompletion As Boolean = False
 
+    ''' <summary>
+    ''' Whether auto complete is enabled
+    ''' </summary>
     Public Property AutoComplete() As Boolean
 
     Property Language() As Language.EditorLanguage
