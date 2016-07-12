@@ -142,15 +142,7 @@ Public Class dlgFindReplace
 
 #Region "Find"
 
-    Private Sub btn_find_clrfind_Click(sender As Object, e As EventArgs) Handles btn_find_clrfind.Click
-        txt_find_find.Text = ""
-    End Sub
-
-    Private Sub txt_find_find_TextChanged(sender As Object, e As EventArgs) Handles txt_find_find.TextChanged
-        If _cso Then
-            txt_replace_find.Text = txt_find_find.Text
-        End If
-    End Sub
+#Region "Methods"
 
     'Before searching, update labels and the textbox
     Private Sub FindPreActions()
@@ -177,6 +169,18 @@ Public Class dlgFindReplace
         End If
         Return sflags
     End Function
+
+#End Region
+
+    Private Sub btn_find_clrfind_Click(sender As Object, e As EventArgs) Handles btn_find_clrfind.Click
+        txt_find_find.Text = ""
+    End Sub
+
+    Private Sub txt_find_find_TextChanged(sender As Object, e As EventArgs) Handles txt_find_find.TextChanged
+        If _cso Then
+            txt_replace_find.Text = txt_find_find.Text
+        End If
+    End Sub
 
     Private Sub btn_find_previous_Click(sender As Object, e As EventArgs) Handles btn_find_previous.Click
         If radio_find_normal.Checked Then
