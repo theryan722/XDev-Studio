@@ -44,7 +44,7 @@ Public Class XEditor
     Public justpasted As Boolean = False 'Whether something was pasted into the editor and not yet added to the clipboard history
     Private hekeysnavwrapline As Boolean = False 'Whether the home and end keys navigate wrapped lines
     Public cmdpalettedlgshowing As Boolean = False 'Whether the command palette dialog is showing
-    Public insertguiddlgshowing As Boolean = False
+    Public insertguiddlgshowing As Boolean = False 'Whether the insert GUID dialog is showing
 
 #End Region
 
