@@ -1418,7 +1418,6 @@ Partial Class Tab_CodeEditor
         Me.TextBox1.FontQuality = ScintillaNET.FontQuality.[Default]
         Me.TextBox1.HighlightCurrentBlock = False
         Me.TextBox1.HighlightCurrentLine = False
-        Me.TextBox1.HighlightLineChanges = True
         Me.TextBox1.HighlightMatchingSelection = False
         Me.TextBox1.HighlightMatchingWords = False
         Me.TextBox1.HomeEndKeysNavigateWrappedLines = False
@@ -1479,7 +1478,6 @@ Partial Class Tab_CodeEditor
         Me.TextBox2.FontQuality = ScintillaNET.FontQuality.[Default]
         Me.TextBox2.HighlightCurrentBlock = False
         Me.TextBox2.HighlightCurrentLine = False
-        Me.TextBox2.HighlightLineChanges = True
         Me.TextBox2.HighlightMatchingSelection = False
         Me.TextBox2.HighlightMatchingWords = False
         Me.TextBox2.HomeEndKeysNavigateWrappedLines = False
@@ -1539,7 +1537,6 @@ Partial Class Tab_CodeEditor
         Me.txt_documentmap.FontQuality = ScintillaNET.FontQuality.[Default]
         Me.txt_documentmap.HighlightCurrentBlock = False
         Me.txt_documentmap.HighlightCurrentLine = False
-        Me.txt_documentmap.HighlightLineChanges = True
         Me.txt_documentmap.HighlightMatchingSelection = False
         Me.txt_documentmap.HighlightMatchingWords = False
         Me.txt_documentmap.HomeEndKeysNavigateWrappedLines = False

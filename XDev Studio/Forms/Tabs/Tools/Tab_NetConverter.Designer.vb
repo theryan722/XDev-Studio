@@ -122,7 +122,6 @@ Partial Class Tab_NetConverter
         Me.XEditor1.Font = New Font("Consolas", 10)
         Me.XEditor1.HighlightCurrentBlock = False
         Me.XEditor1.HighlightCurrentLine = False
-        Me.XEditor1.HighlightLineChanges = True
         Me.XEditor1.HighlightMatchingSelection = False
         Me.XEditor1.HighlightMatchingWords = False
         Me.XEditor1.HomeEndKeysNavigateWrappedLines = False

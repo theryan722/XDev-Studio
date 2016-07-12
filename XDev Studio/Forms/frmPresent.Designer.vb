@@ -595,7 +595,6 @@ Partial Class frmPresent
         Me.TextBox1.Font = New Font("Consolas", 10)
         Me.TextBox1.HighlightCurrentBlock = False
         Me.TextBox1.HighlightCurrentLine = False
-        Me.TextBox1.HighlightLineChanges = True
         Me.TextBox1.HighlightMatchingSelection = False
         Me.TextBox1.HighlightMatchingWords = False
         Me.TextBox1.HomeEndKeysNavigateWrappedLines = False

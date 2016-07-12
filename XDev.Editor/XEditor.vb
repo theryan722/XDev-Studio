@@ -181,8 +181,6 @@ Public Class XEditor
     ''' </summary>
     Property SmartCopy As Boolean = True
 
-    Property HighlightLineChanges As Boolean = True
-
     Property CustomLanguageEnabled As Boolean = False
 
     Property HighlightMatchingSelection As Boolean
