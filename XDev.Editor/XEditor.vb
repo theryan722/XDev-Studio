@@ -678,6 +678,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The font quality used to render fonts
+    ''' </summary>
     Property FontQuality() As ScintillaNET.FontQuality
         Get
             Return Scintilla1.FontQuality
