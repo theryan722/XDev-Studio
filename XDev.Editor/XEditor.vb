@@ -315,6 +315,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The caret display style
+    ''' </summary>
     Property CaretStyle As ScintillaNET.CaretStyle
         Get
             Return Scintilla1.CaretStyle
