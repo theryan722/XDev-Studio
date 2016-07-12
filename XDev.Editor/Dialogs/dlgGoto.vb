@@ -3,9 +3,6 @@
 Public Class dlgGoto
 
     Private _editor As XEditor
-    Private _totallines As Integer = 0
-    Private _currentline As Integer = 0
-    Private _gotoline As Integer
 
 #Region "dlgGoto"
 

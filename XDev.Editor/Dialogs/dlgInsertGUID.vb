@@ -1,26 +1,13 @@
 ﻿Imports System.Windows.Forms
 
 Public Class dlgInsertGUID
+
     Private editor As XEditor
 
-    Public Sub New(ByRef ed As XEditor)
-        InitializeComponent()
-        editor = ed
-    End Sub
+#Region "Methods"
 
-    Private Sub dlgGUID_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Try
-            FormPosition.CenterForm(Me, editor.ParentForm)
-        Catch
-        End Try
-    End Sub
-
-    Private Sub dlgInsertGUID_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        editor.insertguiddlgshowing = false
-    End Sub
-
-    Private Function ConvertItemToGUID(byval item As string) As String
-        dim ret as String = ""
+    Private Function ConvertItemToGUID(ByVal item As String) As String
+        Dim ret As String = ""
         Select Case item
             Case "ASP.NET MVC 1"
                 Return "{603C0E0B-DB56-11DC-BE95-000D561079B0}"
@@ -139,7 +126,7 @@ Public Class dlgInsertGUID
             Case "XNA (Zune)"
                 Return "{D399B71A-8929-442a-A9AC-8BEC78BB2433}"
         End Select
-        return ret
+        Return ret
     End Function
 
     Private Sub InsertSelectedSymbol()
@@ -148,6 +135,30 @@ Public Class dlgInsertGUID
             Me.Close()
         End If
     End Sub
+
+#End Region
+
+#Region "dlgInsertGUID"
+
+    Public Sub New(ByRef ed As XEditor)
+        InitializeComponent()
+        editor = ed
+    End Sub
+
+    Private Sub dlgGUID_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            FormPosition.CenterForm(Me, editor.ParentForm)
+        Catch
+        End Try
+    End Sub
+
+    Private Sub dlgInsertGUID_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        editor.insertguiddlgshowing = False
+    End Sub
+
+#End Region
+
+#Region "ListBox1"
 
     Private Sub ListBox1_KeyDown(sender As Object, e As Windows.Forms.KeyEventArgs) Handles ListBox1.KeyDown
         If e.KeyCode = Windows.Forms.Keys.Enter Then
@@ -158,5 +169,7 @@ Public Class dlgInsertGUID
     Private Sub ListBox1_MouseDoubleClick(sender As Object, e As Windows.Forms.MouseEventArgs) Handles ListBox1.MouseDoubleClick
         InsertSelectedSymbol()
     End Sub
+
+#End Region
 
 End Class
