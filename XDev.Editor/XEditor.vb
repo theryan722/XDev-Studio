@@ -291,6 +291,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether the current line is highlighted
+    ''' </summary>
     Property HighlightCurrentLine As Boolean
         Get
             Return Scintilla1.CaretLineVisible
