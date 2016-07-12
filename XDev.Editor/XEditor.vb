@@ -546,6 +546,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether to display end-of-line characters
+    ''' </summary>
     Property ViewEol() As Boolean
         Get
             Return Scintilla1.ViewEol
