@@ -201,6 +201,9 @@ Public Class XEditor
     ''' </summary>
     Property RecordClipboardHistory As Boolean = True
 
+    ''' <summary>
+    ''' Whether the home and end keys navigate wrapped lines
+    ''' </summary>
     Property HomeEndKeysNavigateWrappedLines As Boolean
         Get
             Return hekeysnavwrapline
