@@ -397,6 +397,9 @@ Public Class XEditor
     ''' </summary>
     Public Property AutoComplete() As Boolean
 
+    ''' <summary>
+    ''' The language of the editor
+    ''' </summary>
     Property Language() As Language.EditorLanguage
         Get
             Return _curlang
