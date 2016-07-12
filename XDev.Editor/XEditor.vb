@@ -558,6 +558,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The line wrapping mode
+    ''' </summary>
     Property WrapMode() As ScintillaNET.WrapMode
         Get
             Return Scintilla1.WrapMode
