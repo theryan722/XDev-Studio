@@ -31,7 +31,7 @@ Public Class XEditor
     Private _custlang_keyword1 As String = "" 'Keyword 1 list for a custom language
     Private _custlang_autoclist As String = "" 'Autocomplete list for a custom language
     Private mousedwellposition As Integer = 0 'Position of mouse when mouse is dwelling
-    Private SyntaxHighlightingArray(87) As Color
+    Private SyntaxHighlightingArray(87) As Color 'Array of colors for syntax highlighting
     Public searchselect_start As Integer = -1
     Public searchselect_end As Integer = -1
     Private tabtriggerslist As List(Of String)
