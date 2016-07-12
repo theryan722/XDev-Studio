@@ -279,6 +279,9 @@ Public Class XEditor
     ''' </summary>
     Property TabTriggersReplacePhrase As Boolean = True
 
+    ''' <summary>
+    ''' The current caret position
+    ''' </summary>
     Property CurrentPosition As Integer
         Get
             Return Scintilla1.CurrentPosition
