@@ -582,6 +582,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The zoom factor
+    ''' </summary>
     Property Zoom() As Integer
         Get
             Return Scintilla1.Zoom
