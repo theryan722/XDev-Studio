@@ -303,6 +303,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether typing affects multiple selections
+    ''' </summary>
     Property MultiSelectionTyping As Boolean
         Get
             Return Scintilla1.AdditionalSelectionTyping
