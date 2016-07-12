@@ -3,6 +3,7 @@
 
 #Region "Methods"
 
+    'Clears the listbox and populates it with code templates
     Public Sub RefreshList()
         Dim arr() As String
         ListBox1.Items.Clear()
