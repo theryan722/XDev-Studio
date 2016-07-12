@@ -41,7 +41,7 @@ Public Class XEditor
     Private blockhighlight As Boolean = False 'Highlighting of folding blocks
     Public insertsymboldlgshowing As Boolean = False 'Whether the insert symbol dialog is showing
     Public listclipboardhistory As List(Of String) 'Clipboard history
-    Public justpasted As Boolean = False
+    Public justpasted As Boolean = False 'Whether something was pasted into the editor and not yet added to the clipboard history
     Private hekeysnavwrapline As Boolean = False
     Public cmdpalettedlgshowing As Boolean = False
     Public insertguiddlgshowing As Boolean = False
