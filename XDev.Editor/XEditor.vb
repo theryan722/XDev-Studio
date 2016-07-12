@@ -570,6 +570,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The line wrapping indent mode
+    ''' </summary>
     Property WrapIndentMode() As ScintillaNET.WrapIndentMode
         Get
             Return Scintilla1.WrapIndentMode
