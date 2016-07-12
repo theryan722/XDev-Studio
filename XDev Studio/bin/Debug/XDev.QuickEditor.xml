@@ -6,7 +6,35 @@ XDev.QuickEditor
 </name>
 </assembly>
 <members>
-<member name="P:XDev.QuickEditor.My.Resources.Resources.ResourceManager">
+<member name="M:XDev.QuickEditor.LanguageEnum.ConvertReadableToEnum(System.String)">
+	<summary>
+ Converts language name in string format to language enum
+ </summary>
+	<param name="lang"></param>
+	<returns>Enum of the language name</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.QuickEditor.LanguageEnum.ConvertEnumToReadable(XDev.Editor.Language.EditorLanguage)">
+	<summary>
+ Converts language enum to string equivalent
+ </summary>
+	<param name="lang"></param>
+	<returns>String equivalent of the language enum</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.QuickEditor.LanguageEnum.ConvertExtensionToEnum(System.String)">
+	<summary>
+ Converts file extension to language enum
+ </summary>
+	<param name="ext"></param>
+	<returns>Language enum of file extension</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.QuickEditor.LanguageEnum.ConvertEnumToExtension(XDev.Editor.Language.EditorLanguage)">
+	<summary>
+ Converts language enum to file extension
+ </summary>
+	<param name="lang"></param>
+	<returns>String file extension of language enum</returns>
+	<remarks></remarks>
+</member><member name="P:XDev.QuickEditor.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -19,6 +47,31 @@ XDev.QuickEditor
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
+</member><member name="M:XDev.QuickEditor.SyntaxHighlighting.GenerateArray">
+	<summary>
+ Sets up an array of Color with the values for syntax highlighting
+ </summary>
+	<remarks></remarks>
+</member><member name="M:XDev.QuickEditor.SyntaxHighlighting.GetHighlightArray">
+	<summary>
+ Gets the color array
+ </summary>
+	<returns>Array of Color, the syntax highlighting values</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.QuickEditor.ColorConverter.ConvertColorToString(System.Drawing.Color)">
+	<summary>
+ Converts a color to string equivalent
+ </summary>
+	<param name="convcolor"></param>
+	<returns>Color in string format</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.QuickEditor.ColorConverter.ConvertStringToColor(System.String)">
+	<summary>
+ Converts a string to Color object equivalent
+ </summary>
+	<param name="convstr"></param>
+	<returns>String as a color object</returns>
+	<remarks></remarks>
 </member>
 </members>
 </doc>

@@ -6,7 +6,25 @@ XDev.Path
 </name>
 </assembly>
 <members>
-<member name="P:XDev.Path.My.Resources.Resources.ResourceManager">
+<member name="M:XDev.Path.Locator.GetDataPath">
+	<summary>
+ The location used to store XDev Studio data
+ </summary>
+	<returns>String, the data path</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.Path.Locator.GetAppPath">
+	<summary>
+ The studio location
+ </summary>
+	<returns>String, the path where the studio is located</returns>
+	<remarks></remarks>
+</member><member name="M:XDev.Path.Locator.GetWorkspacePath">
+	<summary>
+ The workspace location
+ </summary>
+	<returns>String, the workspace path</returns>
+	<remarks></remarks>
+</member><member name="P:XDev.Path.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>

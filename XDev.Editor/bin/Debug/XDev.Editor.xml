@@ -6,7 +6,14 @@ XDev.Editor
 </name>
 </assembly>
 <members>
-<member name="F:XDev.Editor.PrintDoc._font">
+<member name="M:XDev.Editor.FormPosition.CenterForm(System.Windows.Forms.Form,System.Windows.Forms.Form)">
+	<summary>
+ Centers a form
+ </summary>
+	<param name="frm">The form to center</param>
+	<param name="parent">The form to center in</param>
+	<remarks>Call from form load event</remarks>
+</member><member name="F:XDev.Editor.PrintDoc._font">
 	<summary>
  Property variable for the Font the user wishes to use
  </summary>
