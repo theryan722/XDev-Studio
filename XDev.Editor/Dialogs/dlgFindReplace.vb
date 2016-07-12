@@ -160,6 +160,7 @@ Public Class dlgFindReplace
         End If
     End Sub
 
+    'Returns the checked search flags as an integer
     Private Function GetFindSearchFlags() As Integer
         Dim sflags As Integer = 0
         If check_find_matchcase.Checked Then
