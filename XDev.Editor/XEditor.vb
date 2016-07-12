@@ -35,7 +35,7 @@ Public Class XEditor
     Public searchselect_start As Integer = -1 'Selection start anchor
     Public searchselect_end As Integer = -1 'Selection end anchor
     Private tabtriggerslist As List(Of String) 'List of tab triggers
-    Public codetemplatelist As List(Of String)
+    Public codetemplatelist As List(Of String) 'List of code templates
     Public codetemplatesdlgshowing As Boolean = False
     Public clipboardhistorydlgshowing As Boolean = False
     Private blockhighlight As Boolean = False
