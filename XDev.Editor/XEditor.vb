@@ -618,6 +618,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether line endings in pasted text are converted to match the documents
+    ''' </summary>
     Property PasteConvertEndings() As Boolean
         Get
             Return Scintilla1.PasteConvertEndings
