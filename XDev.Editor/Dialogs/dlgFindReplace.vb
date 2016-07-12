@@ -152,6 +152,7 @@ Public Class dlgFindReplace
         End If
     End Sub
 
+    'Before searching, update labels and the textbox
     Private Sub FindPreActions()
         lblStatus.Text = "[]"
         If txt_find_find.Text <> "" And txt_find_find.Text <> " " And Not txt_find_find.Items.Contains(txt_find_find.Text) Then
