@@ -27,7 +27,7 @@ Public Class XEditor
     Private _pagesetup As PrintDocument = New PrintDocument() 'The page setup object
     Private _psissetup As Boolean = False '_pagesetup is setup
     Private _smartcompletion_pressedkey As System.Windows.Forms.Keys 'Stores the key pressed (delete, back, none) to be used for smart completion
-    Private _custlang_keyword0 As String = ""
+    Private _custlang_keyword0 As String = "" 'Keyword 0 list for a custom language
     Private _custlang_keyword1 As String = ""
     Private _custlang_autoclist As String = ""
     Private mousedwellposition As Integer = 0
