@@ -39,7 +39,7 @@ Public Class XEditor
     Public codetemplatesdlgshowing As Boolean = False 'Whether the code templates dialog is showing
     Public clipboardhistorydlgshowing As Boolean = False 'Whether the clipboard history dialog is showing
     Private blockhighlight As Boolean = False 'Highlighting of folding blocks
-    Public insertsymboldlgshowing As Boolean = False
+    Public insertsymboldlgshowing As Boolean = False 'Whether the insert symbol dialog is showing
     Public listclipboardhistory As List(Of String)
     Public justpasted As Boolean = False
     Private hekeysnavwrapline As Boolean = False
