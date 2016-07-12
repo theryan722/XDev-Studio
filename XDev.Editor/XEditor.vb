@@ -382,6 +382,8 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' </summary>
     Property EditorMode() As Mode = Mode.Editor
 
     Public Property SmartCompletion As Boolean = False
