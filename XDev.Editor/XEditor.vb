@@ -154,6 +154,9 @@ Public Class XEditor
 
 #Region "Properties"
 
+    ''' <summary>
+    ''' Whether the control can accept data that the user drags onto it
+    ''' </summary>
     Shadows Property AllowDrop As Boolean
         Get
             Return Scintilla1.AllowDrop
