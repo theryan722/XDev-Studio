@@ -690,6 +690,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether to display the horizontal scroll bar
+    ''' </summary>
     Property HScrollBar() As Boolean
         Get
             Return Scintilla1.HScrollBar
