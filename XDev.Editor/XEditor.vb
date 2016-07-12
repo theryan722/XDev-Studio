@@ -666,6 +666,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The size of indentation in terms of space characters
+    ''' </summary>
     Property IndentWidth() As Integer
         Get
             Return Scintilla1.IndentWidth
