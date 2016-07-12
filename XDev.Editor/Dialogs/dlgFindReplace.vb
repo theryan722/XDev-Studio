@@ -20,6 +20,7 @@ Public Class dlgFindReplace
 
 #Region "Opacity"
 
+    'Unchecks all opacity menu items
     Private Sub ClearOpacityChecks()
         ToolStripMenuItem2.Checked = False
         ToolStripMenuItem3.Checked = False
