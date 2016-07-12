@@ -606,6 +606,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The width of a tab as a multiple of a space character
+    ''' </summary>
     Property TabWidth() As Integer
         Get
             Return Scintilla1.TabWidth
