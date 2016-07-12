@@ -1,9 +1,7 @@
 ﻿Public Class dlgCodeTemplates
     Private editor As XEditor
 
-    Private Sub dlgCodeTemplates_FormClosing(sender As Object, e As Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
-        editor.codetemplatesdlgshowing = False
-    End Sub
+#Region "Methods"
 
     Public Sub RefreshList()
         Dim arr() As String
@@ -12,19 +10,6 @@
             arr = item.Split("|")
             ListBox1.Items.Add(arr(0))
         Next
-    End Sub
-
-    Private Sub dlgCodeTemplates_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Try
-            FormPosition.CenterForm(Me, Editor.ParentForm)
-        Catch
-        End Try
-        RefreshList()
-    End Sub
-
-    Public Sub New(ByRef ed As XEditor)
-        InitializeComponent()
-        editor = ed
     End Sub
 
     Private Function ProcessTemplateText(ByVal txt As String) As String
@@ -45,6 +30,10 @@
         End If
     End Sub
 
+#End Region
+
+#Region "ListBox"
+
     Private Sub ListBox1_KeyDown(sender As Object, e As Windows.Forms.KeyEventArgs) Handles ListBox1.KeyDown
         If e.KeyCode = Windows.Forms.Keys.Enter Then
             InsertSelected()
@@ -55,7 +44,35 @@
         InsertSelected()
     End Sub
 
+#End Region
+
+#Region "dlgCodeTemplates"
+
+    Public Sub New(ByRef ed As XEditor)
+        InitializeComponent()
+        editor = ed
+    End Sub
+
+    Private Sub dlgCodeTemplates_FormClosing(sender As Object, e As Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
+        editor.codetemplatesdlgshowing = False
+    End Sub
+
+    Private Sub dlgCodeTemplates_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            FormPosition.CenterForm(Me, editor.ParentForm)
+        Catch
+        End Try
+        RefreshList()
+    End Sub
+
+#End Region
+
+#Region "ContextMenuStrip"
+
     Private Sub RefreshToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RefreshToolStripMenuItem.Click
         RefreshList()
     End Sub
+
+#End Region
+
 End Class
