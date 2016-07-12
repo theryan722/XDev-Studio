@@ -33,7 +33,7 @@ Public Class XEditor
     Private mousedwellposition As Integer = 0 'Position of mouse when mouse is dwelling
     Private SyntaxHighlightingArray(87) As Color 'Array of colors for syntax highlighting
     Public searchselect_start As Integer = -1 'Selection start anchor
-    Public searchselect_end As Integer = -1
+    Public searchselect_end As Integer = -1 'Selection end anchor
     Private tabtriggerslist As List(Of String)
     Public codetemplatelist As List(Of String)
     Public codetemplatesdlgshowing As Boolean = False
