@@ -28,6 +28,7 @@
         End If
     End Sub
 
+    'Displays the selected item from the listbox in the preview box below it
     Private Sub PreviewSelectedItem()
         If ListBox1.SelectedIndex <> -1 AndAlso editor.ClipboardHistory.Count > 0 Then
             TextBox1.Text = editor.ClipboardHistory(ListBox1.SelectedIndex)
