@@ -738,6 +738,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' The context menu strip associated with the control
+    ''' </summary>
     Shadows Property ContextMenuStrip() As System.Windows.Forms.ContextMenuStrip
         Get
             Return Scintilla1.ContextMenuStrip
