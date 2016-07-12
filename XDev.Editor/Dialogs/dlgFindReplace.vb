@@ -129,6 +129,7 @@ Public Class dlgFindReplace
         End If
     End Sub
 
+    'Set in the editor that the dialog is no longer being displayed, resets search selection anchors
     Private Sub dlgFindReplace_FormClosing(sender As Object, e As Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         editor.finddlgshowing = False
         editor.searchselect_start = -1
