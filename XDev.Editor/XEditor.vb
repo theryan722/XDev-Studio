@@ -474,6 +474,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether multiple selection is enabled
+    ''' </summary>
     Property MultipleSelection() As Boolean
         Get
             Return Scintilla1.MultipleSelection
