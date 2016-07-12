@@ -498,6 +498,9 @@ Public Class XEditor
         End Set
     End Property
 
+    ''' <summary>
+    ''' Whether to write over text rather than insert it
+    ''' </summary>
     Property OverType() As Boolean
         Get
             Return Scintilla1.Overtype
