@@ -1191,6 +1191,16 @@ Public Class XEditor
 
 #End Region
 
+    'Determines if a character is a brace
+    Public Shared Function IsBrace(c As Char) As Boolean
+        Select Case c
+            Case "("c, ")"c, "["c, "]"c, "{"c, "}"c, "<"c, ">"c
+                Return True
+            Case Else
+                Return False
+        End Select
+    End Function
+
     'Initializes list objects
     Private Sub InitializeLists()
         ClipboardHistory = New List(Of String)
