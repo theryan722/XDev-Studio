@@ -17,6 +17,7 @@ Friend Class Tab_AppManager
             Return b
         Catch ex As Exception
             Logger.WriteError(ex)
+            Return Nothing
         End Try
     End Function
 
