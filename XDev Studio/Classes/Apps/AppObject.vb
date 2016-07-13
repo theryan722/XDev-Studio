@@ -70,14 +70,6 @@ Friend Class AppObject
         End If
     End Function
 
-    Private Function GetSelText() As String
-        If frmManager.IsNotepad Then
-        ElseIf frmManager.IsCodeEditor Then
-        Else
-            Return ""
-        End If
-    End Function
-
 #End Region
 
     Public Sub DeleteFile()
