@@ -6,7 +6,231 @@ XDev.Editor
 </name>
 </assembly>
 <members>
-<member name="M:XDev.Editor.FormPosition.CenterForm(System.Windows.Forms.Form,System.Windows.Forms.Form)">
+<member name="P:XDev.Editor.XEditor.AllowDrop">
+	<summary>
+ Whether the control can accept data that the user drags onto it
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.SmartPaste">
+	<summary>
+ Whether smart paste is enabled
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.PerformanceMode">
+	<summary>
+ Whether performance mode is enabled
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.SmartCopy">
+	<summary>
+ Whether smart copy is enabled
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.CustomLanguageEnabled">
+	<summary>
+ Whether the custom language is enabled
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.HighlightMatchingSelection">
+	<summary>
+ Whether to highlight matches of the selection
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.HighlightMatchingWords">
+	<summary>
+ Whether to highlight matches of the current word
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.RecordClipboardHistory">
+	<summary>
+ Whether to record the clipboard history
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.HomeEndKeysNavigateWrappedLines">
+	<summary>
+ Whether the home and end keys navigate wrapped lines
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.ClipboardHistory">
+	<summary>
+ The clipboard history
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.HighlightCurrentBlock">
+	<summary>
+ Whether the current folding block is highlighted
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.CodeTemplates">
+	<summary>
+ The list of code templates
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.TabTriggers">
+	<summary>
+ The list of tab triggers
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.TabTriggersEnabled">
+	<summary>
+ Whether tab triggers are enabled
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.TabTriggersReplacePhrase">
+	<summary>
+ Whether a tab trigger will replace the line or be inserted in its place
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.CurrentPosition">
+	<summary>
+ The current caret position
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.HighlightCurrentLine">
+	<summary>
+ Whether the current line is highlighted
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.MultiSelectionTyping">
+	<summary>
+ Whether typing affects multiple selections
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.CaretStyle">
+	<summary>
+ The caret display style
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.SelectedText">
+	<summary>
+ Gets or replaces the currently selected text
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.Document">
+	<summary>
+ The document used by the control
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.Saved">
+	<summary>
+ Whether changes have been made
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.SmartIndentation">
+	<summary>
+ Whether smart indentation is enabled
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.MatchBraces">
+	<summary>
+ Whether brace matching is enabled
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.EditorMode">
+	<summary>
+ The mode of the editor
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.SmartCompletion">
+	<summary>
+ Whether smart completion is enabled
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.AutoComplete">
+	<summary>
+ Whether auto complete is enabled
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.Language">
+	<summary>
+ The language of the editor
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.Font">
+	<summary>
+ The font of the editor
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.Text">
+	<summary>
+ The document text
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.RightToLeft">
+	<summary>
+ Whether the elements are aligned to support right-to-left fonts
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.MultiPaste">
+	<summary>
+ The behavior for pasting into multiple selections
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.MultipleSelection">
+	<summary>
+ Whether multiple selection is enabled
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.IsReadOnly">
+	<summary>
+ Whether the document is read only
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.OverType">
+	<summary>
+ Whether to write over text rather than insert it
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.UseTabs">
+	<summary>
+ Whether to use a mixture of tabs and spaces for indentation or purely spaces
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.UseWaitCursor">
+	<summary>
+ Whether to use the wait cursor for the control
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.ViewWhitespace">
+	<summary>
+ How to display whitespace characters
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.ViewEol">
+	<summary>
+ Whether to display end-of-line characters
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.WrapMode">
+	<summary>
+ The line wrapping mode
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.WrapIndentMode">
+	<summary>
+ The line wrapping indent mode
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.Zoom">
+	<summary>
+ The zoom factor
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.Technology">
+	<summary>
+ The rendering technology used
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.TabWidth">
+	<summary>
+ The width of a tab as a multiple of a space character
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.PasteConvertEndings">
+	<summary>
+ Whether line endings in pasted text are converted to match the documents
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.MouseDwellTime">
+	<summary>
+ The time in milliseconds the mouse must linger to  raise the DwellStart event
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.MouseSelectionRectangularSwitch">
+	<summary>
+ Whether rectangular selection mode can be switched to while making a selection with the mouse
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.Lexer">
+	<summary>
+ The current lexer
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.IndentWidth">
+	<summary>
+ The size of indentation in terms of space characters
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.FontQuality">
+	<summary>
+ The font quality used to render fonts
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.HScrollBar">
+	<summary>
+ Whether to display the horizontal scroll bar
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.VScrollBar">
+	<summary>
+ Whether to display the vertical scroll bar
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.IndentationGuides">
+	<summary>
+ Whether to display indentation guides
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.EndAtLastLine">
+	<summary>
+ Whether vertical scrolling ends at the last line or can scroll past
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.ContextMenuStrip">
+	<summary>
+ The context menu strip associated with the control
+ </summary>
+</member><member name="P:XDev.Editor.XEditor.EolMode">
+	<summary>
+ Sets the end-of-line mode
+ </summary>
+</member><member name="M:XDev.Editor.FormPosition.CenterForm(System.Windows.Forms.Form,System.Windows.Forms.Form)">
 	<summary>
  Centers a form
  </summary>
