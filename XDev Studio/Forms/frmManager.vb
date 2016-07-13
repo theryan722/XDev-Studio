@@ -6,7 +6,6 @@ Imports System.Drawing.Text
 Imports System.Security.Cryptography
 Imports System.Text.RegularExpressions
 Imports WeifenLuo.WinFormsUI.Docking
-Imports BNUpdate
 Imports System.Reflection
 Imports ScintillaNET
 Imports XDev.Editor.Language
