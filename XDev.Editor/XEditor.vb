@@ -1191,6 +1191,7 @@ Public Class XEditor
 
 #End Region
 
+    'Initializes list objects
     Private Sub InitializeLists()
         ClipboardHistory = New List(Of String)
     End Sub
