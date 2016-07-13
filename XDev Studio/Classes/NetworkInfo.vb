@@ -572,9 +572,9 @@ Friend Class NetworkInfo
                 End If
             Next
             Return b
-
         Catch err As ManagementException
             Logger.Write(Logger.TypeOfLog.Studio, "ERROR: " & err.ToString)
+            Return Nothing
         End Try
     End Function
 
