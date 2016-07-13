@@ -1201,6 +1201,7 @@ Public Class XEditor
         End If
     End Sub
 
+    'Sets keyboard shortcuts for several dialogs and other features
     Private Sub ManageKeyboardShortcuts()
         Scintilla1.AssignCmdKey(Keys.Control Or Keys.H, Command.Null) 'Code Templates
         Scintilla1.AssignCmdKey(Keys.Control Or Keys.K, Command.Null) 'Symbols
