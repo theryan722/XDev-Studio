@@ -1195,6 +1195,7 @@ Public Class XEditor
         ClipboardHistory = New List(Of String)
     End Sub
 
+    'Adds the selected text to the clipboard history
     Private Sub AddSelectedTextToClipboardHistory()
         If RecordClipboardHistory AndAlso Scintilla1.SelectedText <> "" Then
             AddTextToClipboardHistory(Scintilla1.SelectedText)
