@@ -19,6 +19,7 @@ Friend Class AppLoader
         Catch ex As Exception
             MetroFramework.MetroMessageBox.Show(frmManager, "There was an error loading apps.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Logger.WriteError(ex)
+            Return Nothing
         End Try
     End Function
 
