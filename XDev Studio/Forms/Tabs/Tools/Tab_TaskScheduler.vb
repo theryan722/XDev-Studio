@@ -122,8 +122,7 @@ Friend Class Tab_TaskScheduler
     End Sub
 
     Private Function Flags(ByVal F As Task.TaskFlags) As String
-        Dim T As String
-
+        Dim T As String = ""
         If (F And Task.TaskFlags.DeleteWhenDone) <> 0 Then T = T & "Delete When Done - "
         If (F And Task.TaskFlags.Disabled) <> 0 Then T = T & "Disabled - "
         If (F And Task.TaskFlags.DontStartIfOnBatteries) <> 0 Then T = T & "Don't Start If On Batteries - "
@@ -132,9 +131,7 @@ Friend Class Tab_TaskScheduler
         If (F And Task.TaskFlags.KillIfGoingOnBatteries) <> 0 Then T = T & "Kill If Going On Batteries - "
         If (F And Task.TaskFlags.KillOnIdleEnd) <> 0 Then T = T & "Kill On Idle End - "
         If (F And Task.TaskFlags.StartOnlyIfIdle) <> 0 Then T = T & "Start Only If Idle - "
-
         Flags = T
-
     End Function
 
     Private Sub Tab_TaskScheduler_Load(sender As Object, e As EventArgs) Handles MyBase.Load
