@@ -1,18 +1,18 @@
 # XDev Studio
 XDev Studio is a text editor I have been working on for several years, only published to Github very recently. Powered by a custom editor which is built off a customized [ScintillaNET](https://github.com/jacobslusser/ScintillaNET) control.
 
-#Current Version
+# Current Version
 [2.1](https://github.com/theryan722/XDev-Studio/releases)
 
-#To Do
+# To Do
 Set up wiki, document code, document how the studio and editor work
 
-#Language Support
+# Language Support
 Supports a whole range of languages, with 23 having a high level of support (code completion, various other features):
 
 Ada, Assembly, Batch, C#, C++, CSS, Fortran, HTML, Java, JavaScript, Lisp, Lua, Markdown, Pascal, Perl, PHP, PostgreSQL, Python, Ruby, Smalltalk, SQL, VB, XML, YAML
 
-#Features
+# Features
 * Built in Web Browser
 * Terminal
 * Built in access to Command Prompt
@@ -108,5 +108,5 @@ Ada, Assembly, Batch, C#, C++, CSS, Fortran, HTML, Java, JavaScript, Lisp, Lua, 
 * User profiles
 * And a ton more
 
-#Screenshot
+# Screenshot
 ![Screenshot](https://i.imgur.com/QXe08kl.jpg)
